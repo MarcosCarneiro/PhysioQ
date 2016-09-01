@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.stenio.physioq" >
+
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/physio_qicon"
+        android:label="@string/app_name"
+        android:theme="@style/PhysioQTheme"
+
+        >
+
+
+
+
+
+
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data android:name="android.app.default_searchable"
+                android:value=".activities.SearchableActivity" />
+
+        </activity>
+
+
+
+        <activity
+            android:name="br.com.stenio.physioq.activities.SearchableActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+               />
+        </activity>
+
+
+
+        <activity
+            android:name=".activities.About">
+    </activity>
+
+        <activity
+            android:name=".activities.knee.KneeQuestionaryActivity"
+            android:label="@string/title_activity_knee_questionary" >
+        </activity>
+
+
+        <activity android:name=".activities.knee.resultado_visa_p" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.knee.VisaP"
+            android:label="@string/title_activity_visa_p" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.date.Dados"
+            android:label="@string/title_activity_fulkerson" >
+        </activity>
+
+
+
+
+        <activity
+            android:name=".activities.knee.Fulkerson"
+            android:label="@string/title_activity_fulkerson" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.knee.Lysholm"
+            android:label="@string/title_activity_lysholm" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.knee.Kujala"
+            android:label="@string/title_activity_kujala" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.ankle.AnkleQuestionaryActivity"
+            android:label="@string/title_activity_ankle_questionary" >
+
+        </activity>
+
+
+        <activity
+            android:name=".activities.lumbar.LumbarQuestionaryActivity"
+            android:label="@string/title_activity_lumbar_questionary" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.knee.ResultadoFulkerson"
+            android:label="@string/title_activity_resultado_fulkerson" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.knee.ResultadoKujala"
+            android:label="@string/title_activity_resultado_kujala" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.knee.ResultadoLysholm"
+            android:label="@string/title_activity_resultado_lysholm" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.ankle.Aofas"
+            android:label="@string/title_activity_aofas" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.ankle.ResultadoAofas"
+            android:label="@string/title_activity_resultado_aofas" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.ankle.Faam"
+            android:label="@string/title_activity_faam" >
+        </activity>
+
+
+         <activity
+            android:name=".activities.ankle.Cait"
+            android:label="@string/titulo_cait" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.ankle.ResultadoFaam"
+            android:label="@string/title_activity_resultado_faam" >
+        </activity>
+
+        <activity
+            android:name=".activities.ankle.ResultadoCait"
+            android:label="@string/title_activity_resultado_faam" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.ankle.Faos"
+            android:label="@string/title_activity_faos" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.ankle.ResultadoFaos"
+            android:label="@string/title_activity_resultado_faos" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.ankle.Lefs"
+            android:label="@string/title_activity_lefs" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.ankle.ResultadoLefs"
+            android:label="@string/title_activity_resultado_lefs" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.lumbar.Oswestry"
+            android:label="@string/title_activity_oswestry" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.lumbar.ResultadoOswestry"
+            android:label="@string/title_activity_resultado_oswestry" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.lumbar.RolandMorris"
+            android:label="@string/title_activity_roland_morris" >
+        </activity>
+
+
+        <activity
+            android:name=".activities.lumbar.ResultadoRolandMorris"
+            android:label="@string/title_activity_resultado_roland_morris" >
+        </activity>
+
+        <activity
+            android:name=".activities.shoulder.ShoulderQuestionaryActivity"
+            android:label="@string/title_activity_lumbar_questionary" >
+        </activity>
+
+        <activity
+            android:name=".activities.elbow.ElbowQuestionaryActivity"
+            android:label="@string/title_activity_lumbar_questionary" >
+        </activity>
+
+        <activity
+            android:name=".activities.neke.NekeQuestionaryActivity"
+            android:label="@string/title_activity_lumbar_questionary" >
+        </activity>
+        <activity android:name=".activities.OtherActivity" />
+
+
+        <provider
+            android:name="br.com.stenio.physioq.activities.CountryContentProvider"
+            android:authorities="br.com.stenio.physioq.activities.CountryContentProvider"
+            android:exported="true" />
+
+
+
+
+    </application>
+</manifest>

@@ -1,0 +1,491 @@
+<html>
+<head>
+<title>Fulkerson.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { }
+.s2 { color: rgb(0,0,255); }
+.s3 { color: rgb(128,128,128); font-style: italic; }
+.s4 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+Fulkerson.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">package </span><span class="s1">br.com.stenio.physioq.activities.knee; 
+ 
+</span><span class="s0">import </span><span class="s1">android.content.Intent; 
+</span><span class="s0">import </span><span class="s1">android.os.Bundle; 
+</span><span class="s0">import </span><span class="s1">android.os.Environment; 
+</span><span class="s0">import </span><span class="s1">android.support.v7.app.AppCompatActivity; 
+</span><span class="s0">import </span><span class="s1">android.support.v7.widget.Toolbar; 
+</span><span class="s0">import </span><span class="s1">android.util.Log; 
+</span><span class="s0">import </span><span class="s1">android.view.Menu; 
+</span><span class="s0">import </span><span class="s1">android.view.MenuItem; 
+</span><span class="s0">import </span><span class="s1">android.view.View; 
+</span><span class="s0">import </span><span class="s1">android.widget.Button; 
+</span><span class="s0">import </span><span class="s1">android.widget.RadioButton; 
+</span><span class="s0">import </span><span class="s1">android.widget.RadioGroup; 
+ 
+</span><span class="s0">import </span><span class="s1">com.itextpdf.text.Chunk; 
+</span><span class="s0">import </span><span class="s1">com.itextpdf.text.Document; 
+</span><span class="s0">import </span><span class="s1">com.itextpdf.text.Element; 
+</span><span class="s0">import </span><span class="s1">com.itextpdf.text.Font; 
+</span><span class="s0">import </span><span class="s1">com.itextpdf.text.FontFactory; 
+</span><span class="s0">import </span><span class="s1">com.itextpdf.text.Paragraph; 
+</span><span class="s0">import </span><span class="s1">com.itextpdf.text.Phrase; 
+</span><span class="s0">import </span><span class="s1">com.itextpdf.text.pdf.CMYKColor; 
+</span><span class="s0">import </span><span class="s1">com.itextpdf.text.pdf.ColumnText; 
+</span><span class="s0">import </span><span class="s1">com.itextpdf.text.pdf.PdfContentByte; 
+</span><span class="s0">import </span><span class="s1">com.itextpdf.text.pdf.PdfWriter; 
+ 
+</span><span class="s0">import </span><span class="s1">java.io.File; 
+</span><span class="s0">import </span><span class="s1">java.io.FileOutputStream; 
+</span><span class="s0">import </span><span class="s1">java.util.Date; 
+ 
+</span><span class="s0">import </span><span class="s1">br.com.stenio.physioq.R; 
+ 
+</span><span class="s0">public class </span><span class="s1">Fulkerson </span><span class="s0">extends </span><span class="s1">AppCompatActivity { 
+ 
+ 
+ 
+    </span><span class="s0">private </span><span class="s1">Toolbar mToolbar; 
+ 
+    RadioGroup rg1, rg2, rg3, rg4, rg5, rg6, rg7; 
+    Button btok; 
+    Boolean[] bold = </span><span class="s0">new </span><span class="s1">Boolean[</span><span class="s2">38</span><span class="s1">]; 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    @Override 
+    </span><span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) { 
+        </span><span class="s0">super</span><span class="s1">.onCreate(savedInstanceState); 
+        setContentView(R.layout.activity_fulkerson); 
+ 
+ 
+        setupToolbar(); 
+ 
+        rg1 = (RadioGroup) findViewById(R.id.rg1_fulk); 
+        rg2 = (RadioGroup) findViewById(R.id.rg2_fulk); 
+        rg3 = (RadioGroup) findViewById(R.id.rg3_fulk); 
+        rg4 = (RadioGroup) findViewById(R.id.rg4_fulk); 
+        rg5 = (RadioGroup) findViewById(R.id.rg5_fulk); 
+        rg6 = (RadioGroup) findViewById(R.id.rg6_fulk); 
+        rg7 = (RadioGroup) findViewById(R.id.rg7_fulk); 
+ 
+        btok = (Button) findViewById(R.id.btok); 
+ 
+        btok.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() { 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onClick(View v) { 
+                geraResultado(); 
+            } 
+        }); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">geraResultado(){ 
+        </span><span class="s3">//O vetor bold foi acrescentado para saber qual rádio button foi marcado.</span><span class="s1"> 
+        </span><span class="s0">for</span><span class="s1">(</span><span class="s0">int </span><span class="s1">i = </span><span class="s2">0</span><span class="s1">; i &lt; </span><span class="s2">38</span><span class="s1">; i++){ 
+            bold[i] = </span><span class="s0">false</span><span class="s1">; 
+        } 
+ 
+        </span><span class="s0">int </span><span class="s1">id_rg, resultado = </span><span class="s2">0</span><span class="s1">; 
+        RadioButton rb1, rb2, rb3, rb4, rb5, rb6; 
+ 
+        id_rg = rg1.getCheckedRadioButtonId(); 
+        rb1 = (RadioButton) findViewById(R.id.p1_rb1_fulk); 
+        rb2 = (RadioButton) findViewById(R.id.p1_rb2_fulk); 
+ 
+        </span><span class="s0">if </span><span class="s1">(id_rg == rb1.getId()){resultado += </span><span class="s2">10</span><span class="s1">; bold[</span><span class="s2">1</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb2.getId()){resultado += </span><span class="s2">5</span><span class="s1">;  bold[</span><span class="s2">2</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else</span><span class="s1">{resultado += </span><span class="s2">0</span><span class="s1">; bold[</span><span class="s2">3</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+ 
+ 
+        id_rg = rg2.getCheckedRadioButtonId(); 
+        rb1 = (RadioButton) findViewById(R.id.p2_rb1_fulk); 
+        rb2 = (RadioButton) findViewById(R.id.p2_rb2_fulk); 
+ 
+        </span><span class="s0">if </span><span class="s1">(id_rg == rb1.getId()){resultado += </span><span class="s2">10</span><span class="s1">; bold[</span><span class="s2">5</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb2.getId()){resultado += </span><span class="s2">3</span><span class="s1">; bold[</span><span class="s2">6</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else</span><span class="s1">{resultado += </span><span class="s2">0</span><span class="s1">; bold[</span><span class="s2">7</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+ 
+ 
+        id_rg = rg3.getCheckedRadioButtonId(); 
+        rb1 = (RadioButton) findViewById(R.id.p3_rb1_fulk); 
+        rb2 = (RadioButton) findViewById(R.id.p3_rb2_fulk); 
+        rb3 = (RadioButton) findViewById(R.id.p3_rb3_fulk); 
+ 
+        </span><span class="s0">if </span><span class="s1">(id_rg == rb1.getId()){resultado += </span><span class="s2">10</span><span class="s1">; bold[</span><span class="s2">9</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb2.getId()){resultado += </span><span class="s2">6</span><span class="s1">; bold[</span><span class="s2">10</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb3.getId()){resultado += </span><span class="s2">2</span><span class="s1">; bold[</span><span class="s2">11</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else</span><span class="s1">{resultado += </span><span class="s2">0</span><span class="s1">; bold[</span><span class="s2">12</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+ 
+ 
+        id_rg = rg4.getCheckedRadioButtonId(); 
+        rb1 = (RadioButton) findViewById(R.id.p4_rb1_fulk); 
+        rb2 = (RadioButton) findViewById(R.id.p4_rb2_fulk); 
+        rb3 = (RadioButton) findViewById(R.id.p4_rb3_fulk); 
+ 
+        </span><span class="s0">if </span><span class="s1">(id_rg == rb1.getId()){resultado += </span><span class="s2">5</span><span class="s1">; bold[</span><span class="s2">14</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb2.getId()){resultado += </span><span class="s2">4</span><span class="s1">; bold[</span><span class="s2">15</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb3.getId()){resultado += </span><span class="s2">2</span><span class="s1">; bold[</span><span class="s2">16</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else</span><span class="s1">{resultado += </span><span class="s2">0</span><span class="s1">; bold[</span><span class="s2">17</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+ 
+ 
+        id_rg = rg5.getCheckedRadioButtonId(); 
+        rb1 = (RadioButton) findViewById(R.id.p5_rb1_fulk); 
+        rb2 = (RadioButton) findViewById(R.id.p5_rb2_fulk); 
+        rb3 = (RadioButton) findViewById(R.id.p5_rb3_fulk); 
+        rb4 = (RadioButton) findViewById(R.id.p5_rb4_fulk); 
+ 
+        </span><span class="s0">if </span><span class="s1">(id_rg == rb1.getId()){resultado += </span><span class="s2">10</span><span class="s1">; bold[</span><span class="s2">19</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb2.getId()){resultado += </span><span class="s2">5</span><span class="s1">; bold[</span><span class="s2">20</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb3.getId()){resultado += </span><span class="s2">5</span><span class="s1">; bold[</span><span class="s2">21</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb4.getId()){resultado += </span><span class="s2">3</span><span class="s1">; bold[</span><span class="s2">22</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else</span><span class="s1">{resultado += </span><span class="s2">0</span><span class="s1">; bold[</span><span class="s2">23</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+ 
+ 
+        id_rg = rg6.getCheckedRadioButtonId(); 
+        rb1 = (RadioButton) findViewById(R.id.p6_rb1_fulk); 
+        rb2 = (RadioButton) findViewById(R.id.p6_rb2_fulk); 
+        rb3 = (RadioButton) findViewById(R.id.p6_rb3_fulk); 
+        rb4 = (RadioButton) findViewById(R.id.p6_rb4_fulk); 
+        rb5 = (RadioButton) findViewById(R.id.p6_rb5_fulk); 
+        rb6 = (RadioButton) findViewById(R.id.p6_rb6_fulk); 
+ 
+        </span><span class="s0">if </span><span class="s1">(id_rg == rb1.getId()){resultado += </span><span class="s2">45</span><span class="s1">; bold[</span><span class="s2">25</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb2.getId()){resultado += </span><span class="s2">40</span><span class="s1">; bold[</span><span class="s2">26</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb3.getId()){resultado += </span><span class="s2">35</span><span class="s1">; bold[</span><span class="s2">27</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb4.getId()){resultado += </span><span class="s2">25</span><span class="s1">; bold[</span><span class="s2">28</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb5.getId()){resultado += </span><span class="s2">20</span><span class="s1">; bold[</span><span class="s2">29</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb6.getId()){resultado += </span><span class="s2">10</span><span class="s1">; bold[</span><span class="s2">30</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else</span><span class="s1">{resultado += </span><span class="s2">2</span><span class="s1">; bold[</span><span class="s2">31</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+ 
+ 
+        id_rg = rg7.getCheckedRadioButtonId(); 
+        rb1 = (RadioButton) findViewById(R.id.p7_rb1_fulk); 
+        rb2 = (RadioButton) findViewById(R.id.p7_rb2_fulk); 
+        rb3 = (RadioButton) findViewById(R.id.p7_rb3_fulk); 
+        rb4 = (RadioButton) findViewById(R.id.p7_rb4_fulk); 
+ 
+        </span><span class="s0">if </span><span class="s1">(id_rg == rb1.getId()){resultado += </span><span class="s2">10</span><span class="s1">; bold[</span><span class="s2">33</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb2.getId()){resultado += </span><span class="s2">7</span><span class="s1">; bold[</span><span class="s2">34</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb3.getId()){resultado += </span><span class="s2">5</span><span class="s1">; bold[</span><span class="s2">35</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else if</span><span class="s1">(id_rg == rb4.getId()){resultado += </span><span class="s2">2</span><span class="s1">; bold[</span><span class="s2">36</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+        </span><span class="s0">else</span><span class="s1">{resultado += </span><span class="s2">0</span><span class="s1">; bold[</span><span class="s2">37</span><span class="s1">] = </span><span class="s0">true</span><span class="s1">;} 
+ 
+ 
+        geraPDF(); 
+ 
+        Intent irParaResultado = </span><span class="s0">new </span><span class="s1">Intent(Fulkerson.</span><span class="s0">this</span><span class="s1">, ResultadoFulkerson.</span><span class="s0">class</span><span class="s1">); 
+        irParaResultado.putExtra(</span><span class="s4">&quot;resultado&quot;</span><span class="s1">, resultado); 
+        startActivity(irParaResultado); 
+        </span><span class="s3">//onDestroy();</span><span class="s1"> 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">geraPDF(){ 
+ 
+        </span><span class="s0">try </span><span class="s1">{ 
+            </span><span class="s3">//O ENDEREÇO DA PASTA QUE SERÁ CRIADA NO SMARTPHONE</span><span class="s1"> 
+            File root = </span><span class="s0">new </span><span class="s1">File(Environment.getExternalStorageDirectory().getAbsolutePath()+</span><span class="s4">&quot;/PhysioQ&quot;</span><span class="s1">); 
+ 
+            </span><span class="s0">if </span><span class="s1">(!root.exists()){</span><span class="s3">// SE A PASTA NÃO EXISTIR SERÁ CRIADA</span><span class="s1"> 
+                root.mkdirs(); 
+            } 
+ 
+            </span><span class="s3">//STRINGS QUE IRÃO PRO PDF</span><span class="s1"> 
+ 
+            ; 
+            String nome =Dados.ednome.getText().toString(); 
+            String email =Dados.edemail.getText().toString(); 
+            String tto =Dados.edtto.getText().toString(); 
+            String membro =Dados.edmembro.getText().toString(); 
+            String data =Dados.eddata.getText().toString(); 
+            String notas =Dados.ednotas.getText().toString(); 
+            String sex =Dados.btnsex.getText().toString(); 
+            String cirurgia =Dados.edcirurgia.getText().toString(); 
+ 
+ 
+            String titulo = </span><span class="s0">this</span><span class="s1">.getString(R.string.titulo_fulkerson); 
+            String autor = </span><span class="s0">this</span><span class="s1">.getString(R.string.app_name); 
+ 
+ 
+            String[] p = </span><span class="s0">new </span><span class="s1">String[</span><span class="s2">38</span><span class="s1">]; 
+ 
+            </span><span class="s3">//NAS PERGUNTAS E RADIOBUTTONS É INTERESSANTE POR AS STRINGS EM O ARRAY(VETOR) PARA FACILITAR A INSERÇÃO NO PDF</span><span class="s1"> 
+ 
+            p[</span><span class="s2">0</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p1_fulk); 
+            p[</span><span class="s2">1</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p1_rb1_fulk); 
+            p[</span><span class="s2">2</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p1_rb2_fulk); 
+            p[</span><span class="s2">3</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p1_rb3_fulk); 
+ 
+            p[</span><span class="s2">4</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p2_fulk); 
+            p[</span><span class="s2">5</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p2_rb1_fulk); 
+            p[</span><span class="s2">6</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p2_rb2_fulk); 
+            p[</span><span class="s2">7</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p2_rb3_fulk); 
+ 
+            p[</span><span class="s2">8</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p3_fulk); 
+            p[</span><span class="s2">9</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p3_rb1_fulk); 
+            p[</span><span class="s2">10</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p3_rb2_fulk); 
+            p[</span><span class="s2">11</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p3_rb3_fulk); 
+            p[</span><span class="s2">12</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p3_rb4_fulk); 
+ 
+            p[</span><span class="s2">13</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p4_fulk); 
+            p[</span><span class="s2">14</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p3_rb1_fulk); 
+            p[</span><span class="s2">15</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p3_rb2_fulk); 
+            p[</span><span class="s2">16</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p4_rb3_fulk); 
+            p[</span><span class="s2">17</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p3_rb4_fulk); 
+ 
+            p[</span><span class="s2">18</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p5_fulk); 
+            p[</span><span class="s2">19</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p5_rb1_fulk); 
+            p[</span><span class="s2">20</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p5_rb2_fulk); 
+            p[</span><span class="s2">21</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p5_rb3_fulk); 
+            p[</span><span class="s2">22</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p5_rb4_fulk); 
+            p[</span><span class="s2">23</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p5_rb5_fulk); 
+ 
+            p[</span><span class="s2">24</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p6_fulk); 
+            p[</span><span class="s2">25</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p6_rb1_fulk); 
+            p[</span><span class="s2">26</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p6_rb2_fulk); 
+            p[</span><span class="s2">27</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p6_rb3_fulk); 
+            p[</span><span class="s2">28</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p6_rb4_fulk); 
+            p[</span><span class="s2">29</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p6_rb5_fulk); 
+            p[</span><span class="s2">30</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p6_rb6_fulk); 
+            p[</span><span class="s2">31</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p6_rb7_fulk); 
+ 
+            p[</span><span class="s2">32</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p7_fulk); 
+            p[</span><span class="s2">33</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p7_rb1_fulk); 
+            p[</span><span class="s2">34</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p7_rb2_fulk); 
+            p[</span><span class="s2">35</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p7_rb3_fulk); 
+            p[</span><span class="s2">36</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p7_rb4_fulk); 
+            p[</span><span class="s2">37</span><span class="s1">] = </span><span class="s0">this</span><span class="s1">.getString(R.string.p7_rb5_fulk); 
+ 
+ 
+            Date hora = </span><span class="s0">new </span><span class="s1">Date();</span><span class="s3">//PEGA A DATE E HORA ATUAL.</span><span class="s1"> 
+ 
+            </span><span class="s3">//NOME DO PDF</span><span class="s1"> 
+            String sdcardhtmlpath = root.getPath() + File.separator + titulo + hora + </span><span class="s4">&quot;.pdf&quot;</span><span class="s1">; 
+            Log.i(</span><span class="s4">&quot;endereco&quot;</span><span class="s1">, sdcardhtmlpath); 
+ 
+            </span><span class="s3">//ABRE O PDF</span><span class="s1"> 
+            Document document = </span><span class="s0">new </span><span class="s1">Document(); 
+          PdfWriter writer =  PdfWriter.getInstance(document, 
+                    </span><span class="s0">new </span><span class="s1">FileOutputStream(sdcardhtmlpath)); 
+            document.addAuthor(autor); 
+            document.addTitle(titulo); 
+ 
+            document.open(); 
+ 
+            </span><span class="s3">//ADD o retangulo</span><span class="s1"> 
+            PdfContentByte canvas = writer.getDirectContent(); 
+            CMYKColor blackColor = </span><span class="s0">new </span><span class="s1">CMYKColor(</span><span class="s2">0.f</span><span class="s1">, </span><span class="s2">0.f</span><span class="s1">, </span><span class="s2">0.f</span><span class="s1">, </span><span class="s2">1.f</span><span class="s1">); 
+            canvas.setColorStroke(blackColor); 
+            </span><span class="s3">// 806 é até onde desce de cima</span><span class="s1"> 
+            </span><span class="s3">//700 sobe a de baixo</span><span class="s1"> 
+            canvas.moveTo(</span><span class="s2">36</span><span class="s1">, </span><span class="s2">555</span><span class="s1">); 
+            canvas.lineTo(</span><span class="s2">36</span><span class="s1">, </span><span class="s2">806</span><span class="s1">); 
+            canvas.lineTo(</span><span class="s2">550</span><span class="s1">, </span><span class="s2">806</span><span class="s1">); 
+            canvas.lineTo(</span><span class="s2">550</span><span class="s1">, </span><span class="s2">555</span><span class="s1">); 
+            canvas.lineTo(</span><span class="s2">36</span><span class="s1">, </span><span class="s2">555</span><span class="s1">); 
+            canvas.closePathStroke(); 
+ 
+ 
+            </span><span class="s3">//add o titulo</span><span class="s1"> 
+            Font chapterFont = FontFactory.getFont(FontFactory.HELVETICA, </span><span class="s2">16</span><span class="s1">, Font.BOLDITALIC); 
+            Font paragraphFont = FontFactory.getFont(FontFactory.HELVETICA, </span><span class="s2">12</span><span class="s1">, Font.NORMAL); 
+            Font boldn = FontFactory.getFont(FontFactory.HELVETICA, </span><span class="s2">12</span><span class="s1">, Font.BOLD); 
+ 
+ 
+ 
+            Chunk chunk = </span><span class="s0">new </span><span class="s1">Chunk(</span><span class="s4">&quot;Fulkerson&quot;</span><span class="s1">, chapterFont); 
+ 
+            Paragraph pTitle = </span><span class="s0">new </span><span class="s1">Paragraph (chunk); </span><span class="s3">//POE O TITULO DENTRO DE UM PARAGRAFO</span><span class="s1"> 
+            pTitle.setAlignment(Element.ALIGN_CENTER);</span><span class="s3">//DEIXA O PARAGRAFO CENTRALIZADO</span><span class="s1"> 
+            pTitle.setSpacingAfter(</span><span class="s2">250</span><span class="s1">);</span><span class="s3">//ESPAÇO DEPOIS DO PARAGRAFO = 30</span><span class="s1"> 
+            document.add(pTitle); </span><span class="s3">//INSERE O PARAGRAGO pTitle NO DOCUMENT (PDF)</span><span class="s1"> 
+ 
+ 
+ 
+ 
+           </span><span class="s3">//ADD colunas</span><span class="s1"> 
+ 
+ 
+ 
+            ColumnText ct = </span><span class="s0">new </span><span class="s1">ColumnText(writer.getDirectContent()); 
+            ct.setAlignment(Element.ALIGN_LEFT); 
+            </span><span class="s3">//&gt;1 *distancia da Esqueda(pra frente) - &gt;4 distancia de baixo(*cima)</span><span class="s1"> 
+            </span><span class="s3">//2*aumenta pra Baixo( diastancia de cima),3 distancia da Direita aumenta p/ o lado ----tamanho do retangulo----</span><span class="s1"> 
+            ct.setSimpleColumn(</span><span class="s2">50</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">296</span><span class="s1">, </span><span class="s2">770</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(</span><span class="s4">&quot;DADOS DO PACIENTE&quot;</span><span class="s1">)); 
+            ct.go(); 
+ 
+            ct.setSimpleColumn(</span><span class="s2">50</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">296</span><span class="s1">, </span><span class="s2">750</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(</span><span class="s4">&quot;Nome: &quot;</span><span class="s1">)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">88</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">296</span><span class="s1">, </span><span class="s2">750</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(nome, boldn)); 
+            ct.go(); 
+ 
+            ct.setSimpleColumn(</span><span class="s2">50</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">296</span><span class="s1">, </span><span class="s2">730</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(</span><span class="s4">&quot;Email: &quot;</span><span class="s1">)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">88</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">296</span><span class="s1">, </span><span class="s2">730</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(email, boldn)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">50</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">296</span><span class="s1">, </span><span class="s2">710</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(</span><span class="s4">&quot;Data de Nascimento:  &quot;</span><span class="s1">)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">161</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">296</span><span class="s1">, </span><span class="s2">710</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(data, boldn)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">50</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">296</span><span class="s1">, </span><span class="s2">690</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(</span><span class="s4">&quot;Tempo de tratamento: &quot;</span><span class="s1">)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">169</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">296</span><span class="s1">, </span><span class="s2">690</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(tto, boldn)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">50</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">500</span><span class="s1">, </span><span class="s2">670</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(</span><span class="s4">&quot;Membro Avaliado: &quot;</span><span class="s1">)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">150</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">296</span><span class="s1">, </span><span class="s2">670</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(membro, boldn)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">290</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">900</span><span class="s1">, </span><span class="s2">710</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(</span><span class="s4">&quot;Sexo: &quot;</span><span class="s1">)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">321</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">900</span><span class="s1">, </span><span class="s2">710</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(sex, boldn)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">290</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">900</span><span class="s1">, </span><span class="s2">690</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(</span><span class="s4">&quot;Cirurgia: &quot;</span><span class="s1">)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">335</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">900</span><span class="s1">, </span><span class="s2">690</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(cirurgia, boldn)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">50</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">296</span><span class="s1">, </span><span class="s2">650</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Paragraph(</span><span class="s4">&quot;Obeservações:  &quot;</span><span class="s1">)); 
+            ct.go(); 
+            ct.setSimpleColumn(</span><span class="s2">50</span><span class="s1">, </span><span class="s2">36</span><span class="s1">, </span><span class="s2">400</span><span class="s1">, </span><span class="s2">629</span><span class="s1">); 
+            ct.addText(</span><span class="s0">new </span><span class="s1">Phrase(notas, boldn)); 
+            ct.go(); 
+ 
+ 
+ 
+ 
+            </span><span class="s3">//ESSE FOR VAI PASSAR POR TODAS AS FRASES QUE FORAM INSERIDAS NO ARRAY E...</span><span class="s1"> 
+            </span><span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">i = </span><span class="s2">0</span><span class="s1">; i &lt; </span><span class="s2">38</span><span class="s1">; i++){ 
+                Chunk text; 
+                Font f; 
+                </span><span class="s0">int </span><span class="s1">spacing = </span><span class="s2">0</span><span class="s1">; 
+ 
+ 
+ 
+                </span><span class="s3">//SE O TEXTO É UMA PERGUNTA.</span><span class="s1"> 
+                </span><span class="s0">if</span><span class="s1">((i == </span><span class="s2">0</span><span class="s1">) || (i == </span><span class="s2">4</span><span class="s1">) || (i == </span><span class="s2">8</span><span class="s1">) || (i == </span><span class="s2">13</span><span class="s1">) || (i == </span><span class="s2">18</span><span class="s1">) || (i == </span><span class="s2">24</span><span class="s1">) || (i == </span><span class="s2">32</span><span class="s1">)){ 
+                    text = </span><span class="s0">new </span><span class="s1">Chunk(p[i]);</span><span class="s3">// POE O TEXTO DENTRO DE text</span><span class="s1"> 
+                    f = </span><span class="s0">new </span><span class="s1">Font(Font.FontFamily.TIMES_ROMAN, </span><span class="s2">18</span><span class="s1">, Font.BOLD);</span><span class="s3">//DEFINE A FONTE</span><span class="s1"> 
+                    spacing = </span><span class="s2">10</span><span class="s1">;</span><span class="s3">// E O ESPAÇAMENTO</span><span class="s1"> 
+ 
+ 
+ 
+                } 
+                </span><span class="s3">//SE O TEXTo É UM RADIOBUTTON MARCADO.</span><span class="s1"> 
+                </span><span class="s0">else if</span><span class="s1">(bold[i]){ 
+                    text = </span><span class="s0">new </span><span class="s1">Chunk(</span><span class="s4">&quot;( X ) - &quot;</span><span class="s1">+p[i]); </span><span class="s3">//POE COMO UMA OPCAO SELECIONADA, INDICADA POR &quot;( X ) - &quot; MAIS O TEXTO</span><span class="s1"> 
+                    f = </span><span class="s0">new </span><span class="s1">Font(Font.FontFamily.TIMES_ROMAN, </span><span class="s2">14</span><span class="s1">, Font.UNDERLINE); </span><span class="s3">//DEFINE A FONTE E POE UM UNDERLINE EM BAIXO DO TEXTO</span><span class="s1"> 
+ 
+                } 
+                </span><span class="s3">//SE O TEXTO NÃO É UMA PERGUNTA E NEM UMA OPÇÃO SELECIONAD. LOGO ELA É UMA OPÇÃO NÃO SELECIONADA</span><span class="s1"> 
+                </span><span class="s0">else</span><span class="s1">{ 
+                    text = </span><span class="s0">new </span><span class="s1">Chunk(</span><span class="s4">&quot;(  ) - &quot;</span><span class="s1">+p[i]);</span><span class="s3">// POE COM UMA OPÇÃO NÃO SELECIONADAS INDICADA POR &quot;( ) - &quot; MAIS O TEXTO</span><span class="s1"> 
+                    f = </span><span class="s0">new </span><span class="s1">Font(Font.FontFamily.TIMES_ROMAN, </span><span class="s2">14</span><span class="s1">);</span><span class="s3">//DEFINE A FONTE DO TEXTO</span><span class="s1"> 
+                } 
+ 
+                text.setFont(f); 
+ 
+ 
+ 
+ 
+                </span><span class="s3">//document.add(text);</span><span class="s1"> 
+ 
+                
+ 
+             
+ 
+ 
+                Paragraph para = </span><span class="s0">new </span><span class="s1">Paragraph(text); 
+                para.setSpacingBefore(spacing); 
+                document.add(para); 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            } 
+ 
+ 
+ 
+            document.close(); 
+        } </span><span class="s0">catch </span><span class="s1">(Exception e) { 
+            Log.i(</span><span class="s4">&quot;PDFcreation&quot;</span><span class="s1">, e.toString()); 
+        } 
+ 
+    } 
+ 
+ 
+    @Override 
+    </span><span class="s0">public boolean </span><span class="s1">onCreateOptionsMenu(Menu menu) { 
+        </span><span class="s3">// Inflate the menu; this adds items to the action bar if it is present.</span><span class="s1"> 
+        getMenuInflater().inflate(R.menu.menu_fulkerson, menu); 
+        </span><span class="s0">return true</span><span class="s1">; 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">setupToolbar() { 
+        mToolbar = (Toolbar) findViewById(R.id.tool_bar); 
+        mToolbar.setTitle(R.string.titulo_fulkerson); 
+        setSupportActionBar(mToolbar); 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(</span><span class="s0">true</span><span class="s1">); 
+    } 
+ 
+    @Override 
+    </span><span class="s0">public boolean </span><span class="s1">onOptionsItemSelected(MenuItem item) { 
+        </span><span class="s0">int </span><span class="s1">id = item.getItemId(); 
+        </span><span class="s0">if </span><span class="s1">(id == android.R.id.home) { 
+            finish(); 
+        } 
+        </span><span class="s0">return true</span><span class="s1">; 
+    } 
+ 
+ 
+ 
+ 
+ 
+</span><span class="s3">//chave da classe</span><span class="s1"> 
+} 
+</span></pre>
+</body>
+</html>

@@ -1,0 +1,797 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.mharkws.fisioquest.visa_p.visa_p">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"
+                android:text="@string/p1_ap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <!--
+                dsb_progressColor: color/colorStateList for the progress bar and thumb drawable
+                dsb_trackColor: color/colorStateList for the track drawable
+                dsb_indicatorTextAppearance: TextAppearance for the bubble indicator
+                dsb_indicatorColor: color/colorStateList for the bubble shaped drawable
+                dsb_indicatorElevation: related to android:elevation. Will only be used on API level 21+
+                dsb_rippleColor: color/colorStateList for the ripple drawable seen when pressing the thumb.
+                (Yes, it does a kind of "ripple" on API levels lower than 21 and a real RippleDrawable for 21+.-->
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    app:dsb_min="0"
+                    app:dsb_max="10"
+                    app:dsb_indicatorFormatter="%02d"
+                    android:paddingTop="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="@string/min0"
+                android:id="@+id/tvMin"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"
+                android:text="@string/p2_ap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    app:dsb_min="0"
+                    app:dsb_max="10"
+                    app:dsb_indicatorFormatter="%01d"
+                    android:paddingTop="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    />
+                <TextView
+                    android:textColor="@color/colorLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:text="@string/s_dor"
+                    android:id="@+id/textView53"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:textColor="@android:color/holo_red_dark"                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/dor_f"
+                    android:layout_alignParentRight="@+id/sbv2"
+                    android:id="@+id/textView54"
+                     />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"
+                android:text="@string/p3_ap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    app:dsb_min="0"
+                    app:dsb_max="10"
+                    app:dsb_indicatorFormatter="%01d"
+                    android:paddingTop="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    />
+
+                <TextView
+                    android:textColor="@color/colorLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:text="@string/s_dor"
+                    android:id="@+id/textView55"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:textColor="@android:color/holo_red_dark"                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/dor_f"
+                    android:id="@+id/textView56"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"
+                android:text="@string/p4_ap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    app:dsb_min="0"
+                    app:dsb_max="10"
+                    app:dsb_indicatorFormatter="%01d"
+                    android:paddingTop="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    />
+
+                <TextView
+                    android:textColor="@color/colorLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:text="@string/s_dor"
+                    android:id="@+id/textView157"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:textColor="@android:color/holo_red_dark"                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/dor_f"
+                    android:id="@+id/textView58"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"
+                android:text="@string/p5_ap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    app:dsb_min="0"
+                    app:dsb_max="10"
+                    app:dsb_indicatorFormatter="%01d"
+                    android:paddingTop="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    />
+
+                <TextView
+                    android:textColor="@color/colorLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:text="@string/s_dor"
+                    android:id="@+id/textView62"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/dor_f"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"
+                android:text="@string/p6_ap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    app:dsb_min="0"
+                    app:dsb_max="10"
+                    app:dsb_indicatorFormatter="%01d"
+                    android:paddingTop="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    />
+
+                <TextView
+                    android:textColor="@color/colorLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:text="@string/s_dor"
+                    android:id="@+id/textView59"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/dor_f"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"
+                android:text="@string/p7_ap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/visa_rg1"
+                android:layout_marginBottom="10dp">
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/rb1"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:text="@string/p7_0"
+                    android:layout_marginLeft="5dp" />
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/rb2"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:text="@string/p7_4"
+                    android:layout_marginLeft="5dp" />
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/rb3"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:text="@string/p7_7"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/rb4"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:text="@string/p7_10"
+                    android:layout_marginLeft="5dp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p8_ap"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p8_1"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p8_2"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p8_3"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p8a_ap"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/visa_rg2">
+
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/rb1_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:text="@string/rb1_visa"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/rb2_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:text="@string/rb2_visa"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/rb3_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:text="@string/rb3_visa"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/rb4_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:text="@string/rb4_visa"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/rb5_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:text="@string/rb5_visa"
+                    android:layout_marginLeft="5dp" />
+            </RadioGroup>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p8b_ap"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/visa_rg3" >
+
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:text="@string/rb1_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton44"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:text="@string/rb2_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton45"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:text="@string/rb3_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton46"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:text="@string/rb4_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton47"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:text="@string/rb5_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton48"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:layout_marginLeft="5dp" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p8c_ap"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/visa_rg4" >
+
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:text="@string/rb1_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton49"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:text="@string/rb2_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton50"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:text="@string/rb3_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton51"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:text="@string/rb4_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton52"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:layout_marginLeft="5dp" />
+
+
+                <RadioButton
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:text="@string/rb5_visa"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton53"
+                    android:checked="false"
+                    android:button="@drawable/checkbox_style_mid"
+                    android:layout_marginLeft="5dp" />
+
+
+
+            </RadioGroup>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="OK"
+                    android:id="@+id/btok"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textSize="10pt"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="50dp" />
+            </FrameLayout>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edresulvp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

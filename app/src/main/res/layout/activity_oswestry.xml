@@ -1,0 +1,760 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context="com.example.mharkws.fisioquest.oswestry.oswestry">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4"
+        android:background="@color/black"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p1_osw"
+                android:id="@+id/textView82"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg1_osw">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p1_rb1_osw"
+                    android:id="@+id/p1_rb1_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p1_rb2_osw"
+                    android:id="@+id/p1_rb2_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p1_rb3_osw"
+                    android:id="@+id/p1_rb3_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p1_rb4_osw"
+                    android:id="@+id/p1_rb4_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p1_rb5_osw"
+                    android:id="@+id/p1_rb5_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p1_rb6_osw"
+                    android:id="@+id/p1_rb6_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p2_osw"
+                android:id="@+id/textView83"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg2_osw">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p2_rb1_osw"
+                    android:id="@+id/p2_rb1_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p2_rb2_osw"
+                    android:id="@+id/p2_rb2_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p2_rb3_osw"
+                    android:id="@+id/p2_rb3_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p2_rb4_osw"
+                    android:id="@+id/p2_rb4_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p2_rb5_osw"
+                    android:id="@+id/p2_rb5_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p2_rb6_osw"
+                    android:id="@+id/p2_rb6_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p3_osw"
+                android:id="@+id/textView84"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg3_osw">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p3_rb1_osw"
+                    android:id="@+id/p3_rb1_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p3_rb2_osw"
+                    android:id="@+id/p3_rb2_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p3_rb3_osw"
+                    android:id="@+id/p3_rb3_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p3_rb4_osw"
+                    android:id="@+id/p3_rb4_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p3_rb5_osw"
+                    android:id="@+id/p3_rb5_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p3_rb6_osw"
+                    android:id="@+id/p3_rb6_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p4_osw"
+                android:id="@+id/textView85"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg4_osw">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p4_rb1_osw"
+                    android:id="@+id/p4_rb1_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p4_rb2_osw"
+                    android:id="@+id/p4_rb2_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p4_rb3_osw"
+                    android:id="@+id/p4_rb3_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p4_rb4_osw"
+                    android:id="@+id/p4_rb4_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p4_rb5_osw"
+                    android:id="@+id/p4_rb5_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p4_rb6_osw"
+                    android:id="@+id/p4_rb6_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p5_osw"
+                android:id="@+id/textView86"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg5_osw">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p5_rb1_osw"
+                    android:id="@+id/p5_rb1_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p5_rb2_osw"
+                    android:id="@+id/p5_rb2_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p5_rb3_osw"
+                    android:id="@+id/p5_rb3_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p5_rb4_osw"
+                    android:id="@+id/p5_rb4_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p5_rb5_osw"
+                    android:id="@+id/p5_rb5_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p5_rb6_osw"
+                    android:id="@+id/p5_rb6_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p6_osw"
+                android:id="@+id/textView87"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg6_osw">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p6_rb1_osw"
+                    android:id="@+id/p6_rb1_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p6_rb2_osw"
+                    android:id="@+id/p6_rb2_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p6_rb3_osw"
+                    android:id="@+id/p6_rb3_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p6_rb4_osw"
+                    android:id="@+id/p6_rb4_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p6_rb5_osw"
+                    android:id="@+id/p6_rb5_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p6_rb6_osw"
+                    android:id="@+id/p6_rb6_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p7_osw"
+                android:id="@+id/textView88"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg7_osw">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p7_rb1_osw"
+                    android:id="@+id/p7_rb1_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p7_rb2_osw"
+                    android:id="@+id/p7_rb2_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p7_rb3_osw"
+                    android:id="@+id/p7_rb3_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p7_rb4_osw"
+                    android:id="@+id/p7_rb4_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p7_rb5_osw"
+                    android:id="@+id/p7_rb5_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p7_rb6_osw"
+                    android:id="@+id/p7_rb6_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p8_osw"
+                android:id="@+id/textView89"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg8_osw">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p8_rb1_osw"
+                    android:id="@+id/p8_rb1_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p8_rb2_osw"
+                    android:id="@+id/p8_rb2_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p8_rb3_osw"
+                    android:id="@+id/p8_rb3_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p8_rb4_osw"
+                    android:id="@+id/p8_rb4_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p8_rb5_osw"
+                    android:id="@+id/p8_rb5_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p8_rb6_osw"
+                    android:id="@+id/p8_rb6_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p9_osw"
+                android:id="@+id/textView90"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg9_osw">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p9_rb1_osw"
+                    android:id="@+id/p9_rb1_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p9_rb2_osw"
+                    android:id="@+id/p9_rb2_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p9_rb3_osw"
+                    android:id="@+id/p9_rb3_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p9_rb4_osw"
+                    android:id="@+id/p9_rb4_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p9_rb5_osw"
+                    android:id="@+id/p9_rb5_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p9_rb6_osw"
+                    android:id="@+id/p9_rb6_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p10_osw"
+                android:id="@+id/textView91"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg10_osw">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p10_rb1_osw"
+                    android:id="@+id/p10_rb1_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p10_rb2_osw"
+                    android:id="@+id/p10_rb2_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p10_rb3_osw"
+                    android:id="@+id/p10_rb3_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p10_rb4_osw"
+                    android:id="@+id/p10_rb4_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p10_rb5_osw"
+                    android:id="@+id/p10_rb5_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p10_rb6_osw"
+                    android:id="@+id/p10_rb6_osw"
+                    android:checked="false"
+                    android:textColor="@drawable/checkbox_text_color"
+                    />
+            </RadioGroup>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="OK"
+                    android:id="@+id/btok"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textSize="10pt"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="50dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

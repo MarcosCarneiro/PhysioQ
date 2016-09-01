@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="titulo_fulkerson">FULKERSON</string>
+    
+    <string name="p1_fulk"> Mancar</string>
+    <string name="p1_rb1_fulk"> Nunca</string>
+    <string name="p1_rb2_fulk"> Leve</string>
+    <string name="p1_rb3_fulk"> Intenso</string>
+
+    <string name="p2_fulk">Apoio</string>
+    <string name="p2_rb1_fulk">Total</string>
+    <string name="p2_rb2_fulk">Bengala ou muleta</string>
+    <string name="p2_rb3_fulk">Impossível descarga de peso</string>
+
+    <string name="p3_fulk">Subida de escadas</string>
+    <string name="p3_rb1_fulk">Nenhum problema</string>
+    <string name="p3_rb2_fulk">Levemente prejudicado</string>
+    <string name="p3_rb3_fulk">Um degrau cada vez</string>
+    <string name="p3_rb4_fulk">Impossível</string>
+
+    <string name="p4_fulk">Agachamento</string>
+    <string name="p4_rb3_fulk">Não além de 90 graus</string>
+
+    <string name="p5_fulk">Instabilidade</string>
+    <string name="p5_rb1_fulk">Nunca falseia</string>
+    <string name="p5_rb2_fulk">Com atividade vigorosa</string>
+    <string name="p5_rb3_fulk">Ocasionalmente em atividades diárias</string>
+    <string name="p5_rb4_fulk">Frequentemente em atividades diárias</string>
+    <string name="p5_rb5_fulk">Todo dia</string>
+
+    <string name="p6_fulk">Dor</string>
+    <string name="p6_rb1_fulk">Nenhuma</string>
+    <string name="p6_rb2_fulk">Leve durante exercícios pesados</string>
+    <string name="p6_rb3_fulk">Moderada durante exercícios pesados</string>
+    <string name="p6_rb4_fulk">Intensa após exercícios pesados</string>
+    <string name="p6_rb5_fulk">Intensa após caminhar 1,6 Km</string>
+    <string name="p6_rb6_fulk">Intensa após caminhar 0,8 Km</string>
+    <string name="p6_rb7_fulk">Constante e severa</string>
+
+    <string name="p7_fulk">Inchaço</string>
+    <string name="p7_rb1_fulk">Nenhum</string>
+    <string name="p7_rb2_fulk">Leve</string>
+    <string name="p7_rb3_fulk">Com exercícios pesados</string>
+    <string name="p7_rb4_fulk">Com exercícios comuns</string>
+    <string name="p7_rb5_fulk">Constante</string>
+    
+    <string name="excelente_fulk">Excelente: 95 – 100</string>
+    <string name="muito_bom_fulk">Muito Bom: 90 – 94</string>
+    <string name="bom_fulk">Bom: 80 – 89</string>
+    <string name="satisfatorio_fulk">Satisfatório: 70 – 79</string>
+    <string name="ruim_fulk">Ruim: 0 - 70</string>
+
+    <string name="fulk_result">Resultado FULKERSON</string>
+
+
+    <string name="separator">//</string>
+
+    <string name="fonteFulkerson">Fonte: Fulkerson JP, Becker GJ, Meaney JÁ, Miranda M, Folcik MA. Anteromedial tibial tubercle transfer without boné graft. AJSM 1990;18:490-7.</string>
+    
+</resources>

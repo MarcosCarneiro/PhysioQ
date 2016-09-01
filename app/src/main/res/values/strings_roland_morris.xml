@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="titulo_roland_morris">ROLAND MORRIS</string>
+
+    <string name="apresent_roland">Instruções:
+
+Quando suas costas doem, você pode encontrar dificuldade em fazer algumas coisas que normalmente faz. Esta lista possui algumas frases que as pessoas têm utilizado para se descreverem quando sentem dores nas costas. Quando você ler estas frases, pode notar que algumas se destacam por descrever você hoje. Ao ler a lista, pense em você hoje. Quando ler uma frase que descreve você hoje, assinale-a. Se a frase não descreve você, então deixe o espaço em branco e siga para a próxima frase.
+Assinalar apenas a frase que tiver certeza que descreve você hoje.
+</string>
+
+    <string name="frase">Frases:</string>
+    <string name="p1_mor"> Fico em casa a maior parte do tempo por causa de minhas costas.</string>
+    <string name="p2_mor"> Mudo de posição freqüentemente tentando deixar minhas costas confortáveis.</string>
+    <string name="p3_mor"> Ando mais devagar que o habitual por causa de minhas costas.</string>
+    <string name="p4_mor"> Por causa de minhas costas, eu não estou fazendo nenhum dos meus trabalhos que geralmente faço em casa.</string>
+    <string name="p5_mor"> Por causa de minhas costas, eu uso o corrimão para subir escadas.</string>
+    <string name="p6_mor"> Por causa de minhas costas, eu me deito para descansar mais freqüentemente.</string>
+    <string name="p7_mor"> Por causa de minhas costas, eu tenho que me apoiar em alguma coisa para me levantar de uma cadeira normal.</string>
+    <string name="p8_mor"> Por causa de minhas costas, tento conseguir com que outras pessoas façam as coisas para mim.</string>
+    <string name="p9_mor"> Eu me visto mais lentamente que o habitual por causa de minhas costas.</string>
+    <string name="p10_mor"> Eu somente fico em pé por períodos curtos de tempo por causa de minhas costas.</string>
+    <string name="p11_mor"> Por causa de minhas costas, evito me abaixar ou me ajoelhar.</string>
+    <string name="p12_mor"> Encontro dificuldades em me levantar de uma cadeira por causa de minhas costas.</string>
+    <string name="p13_mor"> As minhas costas doem quase o tempo todo.</string>
+    <string name="p14_mor"> Tenho dificuldade em me virar na cama por causa de minhas costas.</string>
+    <string name="p15_mor"> Meu apetite não é muito bom por causa das dores em minhas costas.</string>
+    <string name="p16_mor"> Tenho problemas para colocar minhas meias (ou meia-calça) por causa das dores em minhas costas.</string>
+    <string name="p17_mor"> Caminho apenas curtas distâncias por causa de minhas dores nas costas.</string>
+    <string name="p18_mor"> Não durmo tão bem por causa de minhas costas.</string>
+    <string name="p19_mor"> Por causa de minhas dores nas costas, eu me visto com ajuda de outras pessoas.</string>
+    <string name="p20_mor"> Fico sentado a maior parte do dia por causa de minhas costas.</string>
+    <string name="p21_mor"> Evito trabalhos pesados em casa por causa de minhas costas.</string>
+    <string name="p22_mor"> Por causa das dores em  minhas costas, fico mais irritado e mal humorado com as pessoas do que o habitual.</string>
+    <string name="p23_mor"> Por causa de minhas costas, eu subo escadas mais vagarosamente do que o habitual.</string>
+    <string name="p24_mor"> Fico na cama a maior parte do tempo por causa de minhas costas.</string>
+
+    <string name="escala_dor_mor">Escala de dor: Numa escala de 0 a 10 (zero é sem dor e 10 seria sua dor máxima), qual o grau de dor que você apresenta hoje?</string>
+
+    <string name="obs_mor">Zero corresponde  a uma pessoa sem queixas e o valor máximo(frases =  24 e escala = 10) a um doente com limitações muito grave. </string>
+
+    <string name="mor_result">Resultado ROLAND MORRIS</string>
+
+    <string name="fonteRolandMorris">Fonte: Monteiro J, Faisca L, Nunes O, Hipolito J. Questionário de incapacidade de Roland Morris. Adaptação e validação para os doentes de língua portuguesa com lombalgia. Acta Med Port. 2010;23(5):761-6.</string>
+
+</resources>

@@ -1,0 +1,696 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.mharkws.fisioquest.fulkerson.fulkerson">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p1_fulk"
+                android:id="@+id/textView68"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="29.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg1_fulk">
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p1_rb1_fulk"
+                    android:text="@string/p1_rb1_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p1_rb2_fulk"
+                    android:text="@string/p1_rb2_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p1_rb3_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/p1_rb3_fulk"
+                    android:layout_marginLeft="5dp" />
+            </RadioGroup>
+            <FrameLayout
+                android:background="@drawable/linha_separadora"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p2_fulk"
+                android:id="@+id/textView69"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="29.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg2_fulk">
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p2_rb1_fulk"
+                    android:text="@string/p2_rb1_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p2_rb2_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/p2_rb2_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p2_rb3_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p2_rb3_fulk"
+                    android:layout_marginLeft="5dp" />
+            </RadioGroup>
+
+            <FrameLayout
+                android:background="@drawable/linha_separadora"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p3_fulk"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="29.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg3_fulk">
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p3_rb1_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/p3_rb1_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p3_rb2_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p3_rb2_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p3_rb3_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p3_rb3_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p3_rb4_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p3_rb4_fulk"
+                    android:layout_marginLeft="5dp" />
+            </RadioGroup>
+            <FrameLayout
+                android:background="@drawable/linha_separadora"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p4_fulk"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="29.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg4_fulk">
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p4_rb1_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p3_rb1_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p4_rb2_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p3_rb2_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p4_rb3_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p4_rb3_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p4_rb4_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p3_rb4_fulk"
+                    android:layout_marginLeft="5dp" />
+            </RadioGroup>
+            <FrameLayout
+                android:background="@drawable/linha_separadora"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p5_fulk"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="29.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg5_fulk">
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p5_rb1_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p5_rb1_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p5_rb2_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p5_rb2_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p5_rb3_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p5_rb3_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p5_rb4_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p5_rb4_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p5_rb5_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p5_rb5_fulk"
+                    android:layout_marginLeft="5dp" />
+            </RadioGroup>
+            <FrameLayout
+                android:background="@drawable/linha_separadora"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p6_fulk"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="29.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg6_fulk">
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p6_rb1_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/p6_rb1_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p6_rb2_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p6_rb2_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p6_rb3_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p6_rb3_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p6_rb4_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p6_rb4_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p6_rb5_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p6_rb5_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p6_rb6_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p6_rb6_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p6_rb7_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p6_rb7_fulk"
+                    android:layout_marginLeft="5dp" />
+            </RadioGroup>
+            <FrameLayout
+                android:background="@drawable/linha_separadora"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p7_fulk"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="29.0sp"
+                android:textStyle="bold"
+                android:paddingLeft="0.0dip"
+                android:paddingBottom="3.0dip"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rg7_fulk">
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p7_rb1_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p7_rb1_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p7_rb2_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p7_rb2_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p7_rb3_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p7_rb3_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p7_rb4_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p7_rb4_fulk"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioButton
+                    android:textSize="21.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/checkbox_text_color"
+                    android:gravity="bottom"
+                    android:id="@+id/p7_rb5_fulk"
+                    android:paddingLeft="0.0dip"
+                    android:paddingBottom="3.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                     android:text="@string/p7_rb5_fulk"
+                    android:layout_marginLeft="5dp" />
+
+
+            </RadioGroup>
+            <FrameLayout
+                android:background="@drawable/linha_separadora"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="OK"
+                    android:id="@+id/btok"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimaryLight"
+                    android:textSize="10pt"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="50dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edresul"
+                    android:visibility="invisible"/>
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

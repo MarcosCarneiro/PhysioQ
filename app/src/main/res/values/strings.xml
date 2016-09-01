@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Physiotherapy Questionnaires</string>
+    <string name="action_settings">Configurações</string>
+    <string name="about">Sobre</string>
+    <string name="title_activity_knee_questionary">Questionários sobre Joelho</string>
+    <string name="knee">Joelho</string>
+    <string name="ankle">Tornozelo</string>
+    <string name="shoulder">Ombro</string>
+    <string name="elbow">Cotovelo</string>
+    <string name="neck">Cervical</string>
+    <string name="lumbar">Lombar</string>
+    <string name="delete_data">Apagar Dados</string>
+    <string name="want_delete">Deseja mesmo apagar todos os Questionários respondidos?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+
+    <string-array name="tabs">
+        <item>QUESTIONÁRIOS</item>
+        <item>SALVOS</item>
+
+    </string-array>
+
+    <string-array name="drawer_titles">
+        <item>Questionários</item>
+        <item>Salvos</item>
+        <item>Sobre nós</item>
+    </string-array>
+
+
+    <string-array name="places_array">
+        <item>Fulkerson</item>
+        <item>Roland</item>
+    </string-array>
+
+
+
+
+    <string-array name="category">
+        <item>Tornozelo</item>
+        <item>Joelho</item>
+        <item>Lombar</item>
+        <item>Ombro</item>
+        <item>Cotovelo</item>
+        <item>Cervical</item>
+    </string-array>
+
+    <string-array name="knee_questionaries">
+        <item>VISA-P</item>
+        <item>FULKERSON</item>
+        <item>LYSHOLM</item>
+        <item>KUJALA</item>
+    </string-array>
+
+    <string-array name="ankle_questionaries">
+        <item>AOFAS</item>
+        <item>FAAM</item>
+        <item>FAOS</item>
+        <item>LEFS</item>
+        <item>CAIT</item>
+    </string-array>
+
+    <string-array name="lumbar_questionaries">
+        <item>OSWESTRY</item>
+        <item>ROLAND MORRIS</item>
+    </string-array>
+
+    <string-array name="shoulder_questionaries">
+        <item>DASH</item>
+        <item>SPADI</item>
+        <item>TSO</item>
+        <item>UCLA</item>
+        <item>WORC</item>
+    </string-array>
+
+    <string-array name="elbow_questionaries">
+        <item>ASES</item>
+    </string-array>
+
+    <string-array name="neke_questionaries">
+        <item>NECK DISABILY INDEX</item>
+    </string-array>
+
+
+    <string name="title_activity_visa_p">VisaP</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_fulkerson">Fulkerson</string>
+    <string name="title_activity_lysholm">Lysholm</string>
+    <string name="title_activity_kujala">Kujala</string>
+    <string name="title_activity_ankle_questionary">AnkleQuestionaryActivity</string>
+    <string name="title_activity_lumbar_questionary">LumbarQuestionaryActivity</string>
+    <string name="title_activity_shoulder_questionary">ShoulderQuestionaryActivity</string>
+    <string name="title_activity_resultado_fulkerson">ResultadoFulkerson</string>
+    <string name="title_activity_resultado_kujala">ResultadoKujala</string>
+    <string name="title_activity_resultado_lysholm">ResultadoLysholm</string>
+    <string name="title_activity_aofas">Aofas</string>
+    <string name="title_activity_resultado_aofas">ResultadoAofas</string>
+    <string name="title_activity_faam">Faam</string>
+    <string name="title_activity_resultado_faam">ResultadoFaam</string>
+    <string name="title_activity_faos">Faos</string>
+    <string name="title_activity_resultado_faos">ResultadoFaos</string>
+    <string name="title_activity_lefs">Lefs</string>
+    <string name="title_activity_resultado_lefs">ResultadoLefs</string>
+    <string name="title_activity_oswestry">Oswestry</string>
+    <string name="title_activity_resultado_oswestry">ResultadoOswestry</string>
+    <string name="title_activity_roland_morris">RolandMorris</string>
+    <string name="title_activity_resultado_roland_morris">ResultadoRolandMorris</string>
+
+
+    <string name="app_label">app_label</string>
+    <string name="search_hint">Buscar Questionário....</string>
+    <string name="title_activity_transition">title_activity_transition</string>
+
+    <string name="action_delete">action_delete</string>
+    <string name="action_searchable_activity">action_searchable_activity</string>
+    <string name="search_settings">search_settings</string>
+
+
+</resources>

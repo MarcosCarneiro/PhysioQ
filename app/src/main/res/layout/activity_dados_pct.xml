@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_marginTop="20.0dip"
+                style="@style/editTextLaystyle">
+
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/name18"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/ednome"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="NOME"
+
+                    android:layout_marginLeft="40dp"
+                    android:textColorHint="#c7b2b2"
+                    android:textSize="20sp"
+                    android:textColor="#050505" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_marginTop="8.0dip"
+                style="@style/editTextLaystyle">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/email"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/edemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="E-MAIL"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="20sp"
+                    android:textColorHint="#c7b2b2"
+                    android:textColor="#050505"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout5"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_marginTop="8.0dip"
+                style="@style/editTextLaystyle">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/data"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/edtto"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="TEMPO DE TRATAMENTO"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="#050505"
+                    android:textColorHint="#c7b2b2" />
+
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/bithdateLayout"
+                android:padding="15.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@color/background_color"
+
+                style="@style/SpinnerStyle">
+
+
+                <TextView
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="15.0sp"
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DATA DE NASCIMENTO"
+                    android:textColor="@color/black"
+
+                    android:layout_alignParentLeft="true" style="@style/editTextLablestyle" />
+
+
+                <TextView
+
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="14.0sp"
+                    android:textColor="@color/fab_material_cyan_900"
+                    android:gravity="right"
+                    android:id="@+id/eddata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09/09/1992"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/btnsex"
+                android:padding="15.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@color/background_color"
+
+                style="@style/SpinnerStyle">
+
+
+                <TextView
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="15.0sp"
+                    android:id="@+id/textVew4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MEMBRO AVALIADO "
+                    android:textColor="@color/black"
+
+                    android:layout_alignParentLeft="true"
+                    style="@style/editTextLablestyle" />
+
+
+                <TextView
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="14.0sp"
+                    android:textColor="@color/fab_material_cyan_900"
+                    android:id="@+id/txtdominate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Direito"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/sexlayout"
+                android:padding="15.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@color/background_color"
+                style="@style/SpinnerStyle">
+
+
+                <TextView
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="15.0sp"
+                    android:id="@+id/textVie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEXO"
+                    android:textColor="@color/black"
+
+                    android:layout_alignParentLeft="true"
+                    style="@style/editTextLablestyle" />
+
+
+                <TextView
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="14.0sp"
+                    android:textColor="@color/fab_material_cyan_900"
+                    android:id="@+id/txtviewsex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Masculino"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout android:layout_width="283.0dip"
+                android:layout_height="wrap_content">
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="283.0dip"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/jafoiLayout"
+                    android:background="@color/background_color"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip"
+                    android:layout_marginTop="8.0dip"
+                    style="@style/SpinnerStyle">
+
+
+                    <Switch
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="CIRURGIA?"
+                        android:id="@+id/switch1"
+                        android:checked="false"
+                        android:textOn="Sim"
+                        android:textColor="@color/black"
+
+                        android:textOff="Não"
+                        android:textSize="15sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="false"
+                        android:layout_marginTop="10dp"
+                        style="@style/editTextLablestyle" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/operadateLayout"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_below="@id/jafoiLayout"
+                    style="@style/editTextLaystyle">
+
+
+                    <EditText
+                        android:id="@+id/edcirurgia"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Qual?"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="40dp"
+                        android:textColor="#050505"
+
+                        android:textColorHint="#c7b2b2" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+            <FrameLayout
+                android:id="@+id/comecarQuestion"
+                android:background="@color/colorPrimaryLight"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="29.0dip"
+                style="@style/loginButtonstyle">
+
+
+                <TextView
+                    android:textSize="20.0sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/comecarText1"
+                    android:text="Começar questionário"
+                    style="@style/categoriesButtonTextstyle"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+
+
+
+

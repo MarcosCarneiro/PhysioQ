@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="titulo_faos">FAOS</string>
+    <string name="fdor">DOR</string>
+    <string name="fp1">Qual a frequência que você sente dor no pé ou tornozelo?</string>
+    <string name="intens">Qual a intensidade de dor que você sentiu na última semana durante as seguintes atividades?</string>
+    <string name="fp2">Rodando sobre o seu pé ou tornozelo</string>
+    <string name="fp3">Forçando o pé completamente para baixo</string>
+    <string name="fp4">Forçando o pé completamente para cima</string>
+    <string name="fp5">Andando em superfície plana</string>
+    <string name="fp6">Subindo ou Descendo escadas</string>
+    <string name="fp7">Em repouso na cama</string>
+    <string name="fp8">Ao sentar-se/deitar-se</string>
+    <string name="fp9">Em pé</string>
+    <string name="sintomas">OUTROS SINTOMAS</string>
+    <string name="s1">Qual o grau de rigidez do seu pé/tornozelo logo quando você acorda?</string>
+    <string name="s2">Qual o grau de rigidez após sentar, deitar ou ao descansar mais tarde durante o dia?</string>
+    <string name="s3">Você tem inchaço no seu pé/tornozelo?</string>
+    <string name="s4">Você sente ranger, estalar ou qualquer outro tipo de som quando o movimenta o pé?</string>
+    <string name="s5">O seu pé trava ou fica bloqueado aos movimentos?</string>
+    <string name="s6">Você consegue forcar o seu pé completamente para baixo?</string>
+    <string name="s7">Você consegue forcar o seu pé completamente para cima?</string>
+    <string name="avd">ATIVIDADES DE VIDA DIÁRIA</string>
+    <string name="dificuldade">Qual a dificuldade que você sentiu na última semana:</string>
+    <string name="a1">Descendo escadas</string>
+    <string name="a2">Subindo escadas</string>
+    <string name="a3">Levantando-se a partir da posição sentada</string>
+    <string name="a4">Em pé</string>
+    <string name="a5">Curvando-se para pegar um objeto no chão</string>
+    <string name="a6">Andando em superfícies planas</string>
+    <string name="a7">Entrando e saindo do carro</string>
+    <string name="a8">Indo às compras</string>
+    <string name="a9">Colocando meias</string>
+    <string name="a10">Levantando-se da cama</string>
+    <string name="a11">Tirando as meias</string>
+    <string name="a12">Virando-se na cama, mantendo a mesma posição do tornozelo/pé</string>
+    <string name="a13">Entrando ou saindo do banho</string>
+    <string name="a14">Sentando</string>
+    <string name="a15">Sentando e levantando do vaso sanitário</string>
+    <string name="a16">Realizando tarefas domésticas pesadas (deslocando caixas pesadas, esfregando o chão, etc)</string>
+    <string name="a17">Realizando tarefas domésticas leves (cozinhando, varrendo etc)</string>
+    <string name="funcional_faos">ESPORTES E RECREAÇÕES FUNCIONAIS</string>
+    <string name="sp1">Agachando</string>
+    <string name="sp2">Correndo</string>
+    <string name="sp3">Pulando</string>
+    <string name="sp4">Mudando de direção sobre o seu tornozelo/pé lesionado</string>
+    <string name="sp5">Ajoelhando-se</string>
+    <string name="qualidade">QUALIDADE DE VIDA EM RELAÇÃO AO PÉ E TORNOZELO</string>
+    <string name="q1">Com que frequência que você tem percebido os problemas do seu tornozelo/ pé?</string>
+    <string name="q2">Você tem modificado seu estilo de vida para evitar atividades potencialmente danosas para o seu pé e tornozelo?</string>
+    <string name="q3">O quanto você está incomodado com a falta de confiança no seu tornozelo/ pé?</string>
+    <string name="q4">No geral, quanto de dificuldade você tem com o seu tornozelo/pé?</string>
+
+    <string name="faos_result">Resultado FAOS</string>
+
+    <string-array name="tempo">
+        <item> </item>
+        <item>Sempre</item>
+        <item>Diariamente</item>
+        <item>Semanalmente</item>
+        <item>Mensalmente</item>
+        <item>Nunca</item>
+    </string-array>
+    <string-array name="intensidade">
+        <item> </item>
+        <item>Extrema</item>
+        <item>Acentuada</item>
+        <item>Moderada</item>
+        <item>Leve</item>
+        <item>Nenhuma</item>
+    </string-array>
+    <string-array name="frequencia">
+        <item> </item>
+        <item>Sempre</item>
+        <item>Frequentemente</item>
+        <item>Ás vezes</item>
+        <item>Raramente</item>
+        <item>Nunca</item>
+    </string-array>
+
+    <string-array name="grau">
+        <item> </item>
+        <item>Totalmente</item>
+        <item>Muito</item>
+        <item>Moderadamente</item>
+        <item>Um pouco</item>
+        <item>Não</item>
+    </string-array>
+
+    <string name="fonteFaos">Fonte : Roos EM, Brandsson S, Karlsson J. Validation of the foot and ankle outcome score
+for ankle ligament reconstruction. Foot Ankle Int. 2001;22:788-94.</string>
+
+</resources>

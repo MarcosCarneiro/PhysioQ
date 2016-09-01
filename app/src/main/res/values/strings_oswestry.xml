@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="titulo_oswestry">OSWESTRY</string>
+    
+    <string name="p1_osw">Seção 1 – Intensidade da Dor</string>
+    <string name="p1_rb1_osw">Não sinto dor no momento.</string>
+    <string name="p1_rb2_osw">A dor é muito leve no momento.</string>
+    <string name="p1_rb3_osw">A dor é moderada no momento.</string>
+    <string name="p1_rb4_osw">A dor é razoavelmente intensa no momento.</string>
+    <string name="p1_rb5_osw">A dor é muito intensa no momento.</string>
+    <string name="p1_rb6_osw">A dor é a pior que se pode imaginar no momento.</string>
+
+
+    <string name="p2_osw">Seção 2 – Cuidados Pessoais (lavar-se, vestir-se, etc.)</string>
+    <string name="p2_rb1_osw">Posso cuidar de mim mesmo normalmente sem que isso aumente a dor.</string>
+    <string name="p2_rb2_osw">Posso cuidar de mim mesmo normalmente, mas sinto muita dor.</string>
+    <string name="p2_rb3_osw">Sinto dor ao cuidar de mim mesmo e faço isso lentamente e com cuidado.</string>
+    <string name="p2_rb4_osw">Necessito de alguma ajuda, porém consigo fazer a maior parte dos meus cuidados pessoais.</string>
+    <string name="p2_rb5_osw">Necessito de ajuda diária na maioria dos aspectos de meus cuidados pessoais.</string>
+    <string name="p2_rb6_osw">Não consigo me vestir, lavo-me com dificuldade e permaneço na cama.</string>
+
+
+    <string name="p3_osw">Seção 3 – Levantar Objetos</string>
+    <string name="p3_rb1_osw">Consigo levantar objetos pesados sem aumentar a dor.</string>
+    <string name="p3_rb2_osw">Consigo levantar objetos pesados, mas isso aumenta a dor.</string>
+    <string name="p3_rb3_osw">A dor me impede de levantar objetos pesados do chão, mas consigo levantá-los se estiverem convenientemente posicionados, por exemplo, sobre uma mesa.</string>
+    <string name="p3_rb4_osw">A dor me impede de levantar objetos pesados, mas consigo levantar objetos leves a moderados, se estiverem convenientemente posicionados.</string>
+    <string name="p3_rb5_osw">Consigo levantar apenas objetos muito leves.</string>
+    <string name="p3_rb6_osw">Não consigo levantar ou carregar absolutamente nada.</string>
+
+
+    <string name="p4_osw">Seção 4 – Caminhar</string>
+    <string name="p4_rb1_osw">A dor não me impede de caminhar qualquer distância.</string>
+    <string name="p4_rb2_osw">A dor me impede de caminhar mais de 1.600 metros (aproximadamente 16 quarteirões de 100 metros).</string>
+    <string name="p4_rb3_osw">A dor me impede de caminhar mais de 800 metros (aproximadamente 8 quarteirões de 100 metros).</string>
+    <string name="p4_rb4_osw">A dor me impede de caminhar mais de 400 metros (aproximadamente 4 quarteirões de 100 metros).</string>
+    <string name="p4_rb5_osw">Só consigo andar usando uma bengala ou muletas.</string>
+    <string name="p4_rb6_osw">Fico na cama a maior parte do tempo e preciso me arrastar para ir ao banheiro.</string>
+
+
+    <string name="p5_osw">Seção 5 – Sentar</string>
+    <string name="p5_rb1_osw">Consigo sentar em qualquer tipo de cadeira durante o tempo que quiser.</string>
+    <string name="p5_rb2_osw">Consigo sentar em uma cadeira confortável durante o tempo que quiser.</string>
+    <string name="p5_rb3_osw">A dor me impede de ficar sentado por mais de 1 hora.</string>
+    <string name="p5_rb4_osw">A dor me impede de ficar sentado por mais de meia hora.</string>
+    <string name="p5_rb5_osw">A dor me impede de ficar sentado por mais de 10 minutos.</string>
+    <string name="p5_rb6_osw">A dor me impede de sentar.</string>
+
+
+    <string name="p6_osw">Seção 6 – Ficar em Pé</string>
+    <string name="p6_rb1_osw">Consigo ficar em pé o tempo que quiser sem aumentar a dor.</string>
+    <string name="p6_rb2_osw">Consigo ficar em pé durante o tempo que quiser, mas isso aumenta a dor.</string>
+    <string name="p6_rb3_osw">A dor me impede de ficar em pé por mais de 1 hora.</string>
+    <string name="p6_rb4_osw">A dor me impede de ficar em pé por mais de meia hora.</string>
+    <string name="p6_rb5_osw">A dor me impede de ficar em pé por mais de 10 minutos.</string>
+    <string name="p6_rb6_osw">A dor me impede de ficar em pé.</string>
+
+
+    <string name="p7_osw">Seção 7 – Dormir</string>
+    <string name="p7_rb1_osw">Meu sono nunca é perturbado pela dor.</string>
+    <string name="p7_rb2_osw">Meu sono é ocasionalmente perturbado pela dor.</string>
+    <string name="p7_rb3_osw">Durmo menos de 6 horas por causa da dor.</string>
+    <string name="p7_rb4_osw">Durmo menos de 4 horas por causa da dor.</string>
+    <string name="p7_rb5_osw">Durmo menos de 2 horas por causa da dor.</string>
+    <string name="p7_rb6_osw">A dor me impede totalmente de dormir.</string>
+
+
+    <string name="p8_osw">Seção 8 – Vida Sexual</string>
+    <string name="p8_rb1_osw">Minha vida sexual é normal e não aumenta minha dor.</string>
+    <string name="p8_rb2_osw">Minha vida sexual é normal, mas causa um pouco mais de dor.</string>
+    <string name="p8_rb3_osw">Minha vida sexual é quase normal, mas causa muita dor.</string>
+    <string name="p8_rb4_osw">Minha vida sexual é severamente limitada pela dor.</string>
+    <string name="p8_rb5_osw">Minha vida sexual é quase ausente por causa da dor.</string>
+    <string name="p8_rb6_osw">A dor me impede de ter uma vida sexual.</string>
+
+
+    <string name="p9_osw">Seção 9 – Vida Social</string>
+    <string name="p9_rb1_osw">Minha vida social é normal e não aumenta a dor.</string>
+    <string name="p9_rb2_osw">Minha vida social é normal, mas aumenta a dor.</string>
+    <string name="p9_rb3_osw">A dor não tem nenhum efeito significativo na minha vida social, porém limita alguns interesses que demandam mais energia, como por exemplo, esporte, etc.</string>
+    <string name="p9_rb4_osw">A dor tem restringido minha vida social e não saio de casa com tanta freqüência.</string>
+    <string name="p9_rb5_osw">A dor tem restringido minha vida social ao meu lar.</string>
+    <string name="p9_rb6_osw">Não tenho vida social por causa da dor.</string>
+
+
+    <string name="p10_osw">Seção 10 – Locomoção (ônibus/carro/táxi)</string>
+    <string name="p10_rb1_osw">Posso ir a qualquer lugar sem sentir dor.</string>
+    <string name="p10_rb2_osw">Posso ir a qualquer lugar, mas isso aumenta a dor.</string>
+    <string name="p10_rb3_osw">A dor é intensa, mas consigo me locomover durante 2 horas.</string>
+    <string name="p10_rb4_osw">A dor restringe-me a locomoções de menos de 1 hora.</string>
+    <string name="p10_rb5_osw">A dor restringe-me a pequenas locomoções necessárias de menos de 30 minutos.</string>
+    <string name="p10_rb6_osw">A dor impede de locomover-me, exceto para receber tratamento.</string>
+    
+    <string name="osw_0">0 - 20: incapacidade mínima</string>
+    <string name="osw_20">20 - 40: incapacidade moderada</string>
+    <string name="osw_40">40 - 60: incapacidade grave</string>
+    <string name="osw_60">60 - 80: paciente inválido</string>
+    <string name="osw_80">80 - 100: paciente preso a cama</string>
+
+    <string name="fonteOswestry">Fonte: FAIRBANK, J.C.T.;DAVIES, J.B.; COUPER, J.; O\'BRIEN, J.P. The Oswestry low back pain disability questionnaire. Physiother, 66(8): 271-3, 1980.</string>
+
+</resources>

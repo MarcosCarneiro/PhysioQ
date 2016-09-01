@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="titulo_visa_p">VISA-P</string>
+    <string name="p1_ap">1. Por quantos minutos você consegue ficar sentado sem dor?</string>
+    <string name="min0">0 min</string>
+    <string name="min100">100 min</string>
+    <string name="p2_ap">2. Você sente dor ao descer escadas num ritmo de marcha normal?</string>
+    <string name="p3_ap">3. Você sente dor no joelho quando o estende totalmente de forma ativa e com apoio de peso?</string>
+    <string name="p4_ap">4. Você sente dor quando faz o exercício afundo com apoio de peso total?</string>
+    <string name="p5_ap">5. Você tem problemas ao agachar?</string>
+    <string name="p6_ap">6. Você sente dor durante ou imediatamente após saltitar 10 vezes em uma perna só?</string>
+    <string name="p7_ap">7. Atualmente, você está praticando algum esporte ou outro tipo de atividade física?</string>
+    <string name="p7_0">Não</string>
+    <string name="p7_4">treinamento e/ou competição com restrições</string>
+    <string name="p7_7">treinamento sem restrição mas não competindo no mesmo nível anterior ao início dos sintomas</string>
+    <string name="p7_10">competindo no mesmo nível ou nível mais alto do que quando os sintomas começaram</string>
+    <string name="p8_ap">8. Por favor, complete somente uma das questões, A, B ou C, conforme a explicação abaixo.</string>
+    <string name="p8_1">• Se você não sente dor ao praticar esportes, por favor, responda somente a questão 8A.</string>
+    <string name="p8_2">• Se você sente dor ao praticar algum esporte, mas esta dor não o impede de praticar a atividade esportiva, por favor, responda somente a questão 8B.</string>
+    <string name="p8_3">• Se você sente dor que o impede de praticar atividades esportivas, responda somente a questão 8C.</string>
+    <string name="p8a_ap">8A. Se você não sente dor ao praticar esporte, por quanto tempo você consegue treinar/praticar?</string>
+    <string name="p8b_ap">8B. Se você sente dor ao praticar esporte, mas a dor não o impede de completar/praticar a atividade esportiva, por quanto tempo você consegue treinar/praticar?</string>
+    <string name="p8c_ap">8C. Se você sente dor que o impede de completar o seu treinamento/prática esportiva, por quanto tempo você consegue treinar/praticar?</string>
+    <string name="dor_f">Dor Forte ou Severa</string>
+    <string name="s_dor">Sem Dor</string>
+    <string name="incapaz">incapaz</string>
+    <string name="sem_p">sem problemas</string>
+
+    <string name="rb1_visa">Não consigo treinar/praticar</string>
+    <string name="rb2_visa">0-5 minutos</string>
+    <string name="rb3_visa">6-10 minutos</string>
+    <string name="rb4_visa">11-15 minutos</string>
+    <string name="rb5_visa">mais de 15 minutos</string>
+
+    <string name="excelente">Excelente: 95-100 pontos.</string>
+    <string name="bom">Bom: 84-94 pontos.</string>
+    <string name="regular">Regular: 65-83 pontos.</string>
+    <string name="ruim">Ruim: 64 ou menos pontos.</string>
+
+    <string name="fonte_visa_p">Fonte:Wageck BB, de Noronha M, Lopes AD, da Cunha RA, Takahashi RH, Costa LO. Cross-cultural adaptation and measurement properties of the Brazilian Portuguese Version of the Victorian Institute of Sport Assessment-Patella (VISA-P) scale. J Orthop Sports Phys Ther. 2013;43(3):163-71.</string>
+    <string name="visap_result">Resultado VISA-P</string>
+</resources>

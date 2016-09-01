@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="titulo_lysholm">LYSHOLM</string>
+
+    <string name="p1_lysh">Mancar</string>
+    <string name="p1_rb1_lysh">Nunca</string>
+    <string name="p1_rb2_lysh">Leve ou periodicamente</string>
+    <string name="p1_rb3_lysh">Intenso e constantemente</string>
+
+    <string name="p2_lysh">Apoio</string>
+    <string name="p2_rb1_lysh">Nenhum</string>
+    <string name="p2_rb2_lysh">Bengala ou muleta</string>
+    <string name="p2_rb3_lysh">Impossível</string>
+
+    <string name="p3_lysh">Travamento</string>
+    <string name="p3_rb1_lysh">Nenhum travamento ou sensação de travamento</string>
+    <string name="p3_rb2_lysh">Tem sensação, mas sem travamento</string>
+    <string name="p3_rb3_lysh">Travamento ocasional</string>
+    <string name="p3_rb4_lysh">Frequente</string>
+    <string name="p3_rb5_lysh">Articulação (junta) travada no exame</string>
+
+    <string name="p4_lysh">Instabilidade</string>
+    <string name="p4_rb1_lysh">Nunca falseia</string>
+    <string name="p4_rb2_lysh">Raramente, durante atividades atléticas ou outros exercícios pesados</string>
+    <string name="p4_rb3_lysh">Frequentemente durante atividades atléticas ou outros exercícios pesados (ou incapaz de participação)</string>
+    <string name="p4_rb4_lysh">Ocasionalmente em atividades diárias</string>
+    <string name="p4_rb5_lysh">Frequentemente em atividades diárias</string>
+    <string name="p4_rb6_lysh">Em cada passo</string>
+
+    <string name="p5_lysh">Dor</string>
+    <string name="p5_rb1_lysh">Nenhuma</string>
+    <string name="p5_rb2_lysh">Inconstante ou leve durante exercícios pesados</string>
+    <string name="p5_rb3_lysh">Marcada durante exercícios pesados</string>
+    <string name="p5_rb4_lysh">Marcada durante ou após caminhar mais de 2 Km</string>
+    <string name="p5_rb5_lysh">Marcada durante ou após caminhar menos de 2 Km</string>
+    <string name="p5_rb6_lysh">Constante</string>
+
+    <string name="p6_lysh">Inchaço</string>
+    <string name="p6_rb1_lysh">Nenhum</string>
+    <string name="p6_rb2_lysh">Com exercícios pesados</string>
+    <string name="p6_rb3_lysh">Com exercícios comuns</string>
+    <string name="p6_rb4_lysh">Constante</string>
+
+    <string name="p7_lysh">Subindo escadas</string>
+    <string name="p7_rb1_lysh">Nenhum problema</string>
+    <string name="p7_rb2_lysh">Levemente prejudicado</string>
+    <string name="p7_rb3_lysh">Um degrau cada vez</string>
+    <string name="p7_rb4_lysh">Impossível</string>
+
+    <string name="p8_lysh">Subindo escadas</string>
+    <string name="p8_rb3_lysh">Não além de 90 graus</string>
+
+
+    <string name="excelente_lysh">Excelente: 95 – 100</string>
+    <string name="bom_lysh">Bom: 84 – 94</string>
+    <string name="regular_lysh">Regular: 65 – 83</string>
+    <string name="ruim_lysh">Ruim: 0 - 64</string>
+
+    <string name="lysh_result">Resultado LYSHOLM</string>
+
+
+    <string name="fonteLysholm">Fonte: Peccin MS, Ciconelli R, Cohen M. Questionário específico para sintomas do joelho “Lysholm Knee Scoring Scale” - tradução e validação para a língua portuguesa. Acta Ortop Bras. 2006;14:268-72.</string>
+
+</resources>

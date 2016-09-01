@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="titulo_aofas">AOFAS</string>
+    <string name="dor">1) Dor:</string>
+    <string name="d1">Nenhuma</string>
+    <string name="d2">Leve, ocasional</string>
+    <string name="d3">Moderada, diária</string>
+    <string name="d4">Intensa, quase sempre presente</string>
+    <string name="funcional">2) Funcional:</string>
+    <string name="f_perg">Limitação nas atividades, necessidade de suporte</string>
+    <string name="f1">Sem limitação, sem suporte</string>
+    <string name="f2">Sem limitação nas atividades diárias, limitação nas atividades recreacionais, sem suporte</string>
+    <string name="f3">Limitação nas atividades diárias e recreacionais, bengala</string>
+    <string name="f4">Limitação intensa nas atividades diárias e recreacionais, andador, muletas, cadeira-de-rodas, órtese (tornozeleira, imobilizador de tornozelo)</string>
+    <string name="dist_max">3) Distância máxima de caminhada, quarteirões:</string>
+    <string name="dm1">Mais que 6</string>
+    <string name="dm2">De 4 a 6</string>
+    <string name="dm3">De 1 a 3</string>
+    <string name="dm4">Menos que 1</string>
+    <string name="sup_cam">4) Superfície de caminhada:</string>
+    <string name="sc1">Sem dificuldade em qualquer superfície</string>
+    <string name="sc2">Algumas dificuldades em terrenos irregulares, escadas, inclinações e ladeiras</string>
+    <string name="sc3">Dificuldade intensa em terrenos irregulares, escadas, inclinações e ladeiras</string>
+    <string name="an_marc">Anormalidade na marcha:</string>
+    <string name="am1">Nenhuma, leve</string>
+    <string name="am2">Evidente</string>
+    <string name="am3">Acentuada</string>
+    <string name="mob_sag">5) Mobilidade sagital (flexão + extensão):</string>
+    <string name="ms1">Normal ou levemente restrito (30º ou mais)</string>
+    <string name="ms2">Restrição moderada (15º - 29º)</string>
+    <string name="ms3">Restrição intensa (Menos que 15º)</string>
+    <string name="mob_ret">6) Mobilidade do Retro-Pé (inversão + eversão):</string>
+    <string name="mr1">Normal ou levemente restrito (75 - 100% do normal)</string>
+    <string name="mr2">Restrição moderada (25 - 74% do normal)</string>
+    <string name="mr3">Restrição intensa (Menos que 25º do normal)</string>
+    <string name="estab">7) Estabilidade do tornozelo e retro-pé (anteroposterior, varo-valgo):</string>
+    <string name="e1">Estável</string>
+    <string name="e2">Instável</string>
+    <string name="alin">8) Alinhamento:</string>
+    <string name="aof1">Bom, pé plantígrado, ante-pé e retro-pé bem alinhado</string>
+    <string name="aof2">Regular, pé plantígrado, algum grau de desalinhamento do tornozelo e retro-pé, sem sintomas</string>
+    <string name="aof3">Ruim, pé não plantígrado, desalinhamento intenso e sintomático</string>
+
+    <string name="aof_result">Resultado AOFAS</string>
+
+    <string name="fonteAofas">Fonte: Rodrigues RC, Masiero D, Mizusaki JM, Imoto AM, Peccin MS, Cohen M et al. Tradução, adaptação cultural e validação do american orthopaedic foot and ankle society (AOFAS) ankle-hindfoot scale. Acta Ortop Bras. [ periódico na Internet]. 2008; 16(2): 107-111. Disponível em URL: http://www.scielo.br/aob</string>
+
+</resources>

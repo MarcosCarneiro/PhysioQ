@@ -1,0 +1,78 @@
+<resources>
+
+    //TORNOZELO > CAIT
+
+    <string name="titulo_cait">CAIT</string>
+
+    <string name="enunciadocait">Assinale a alternativa que descreve seus tornozelos da forma mais adequada.</string>
+    <string name="p1c">1. Sinto dor no tornozelo:</string>
+    <string name="p2c">2. Sinto INSTABILIDADE no tornozelo:</string>
+    <string name="p3c">3. Quando me viro BRUSCAMENTE, sinto INSTABILIDADE no tornozelo:</string>
+    <string name="p4c">4. Quando desço escadas, sinto INSTABILIDADE no tornozelo:</string>
+    <string name="p5c">5. Sinto INSTABILIDADE no tornozelo quando fico num só pe:</string>
+    <string name="p6c">6. Sinto INSTABILIDADE no tornozelo quando:</string>
+    <string name="p7c">7. Sinto INSTABILIDADE no tornozelo quando:</string>
+    <string name="p8c">8. TIPICAMENTE quando começo a torcer o tornozelo, consigo parar: </string>
+    <string name="p9c">9. Após um entorse TÍPICO, meu tornozelo volta ao normal</string>
+
+    <string name="cait1a">Nunca</string>
+    <string name="cait1b">Quando pratico esportes</string>
+    <string name="cait1c">Quando corro em superfícies irregulares</string>
+    <string name="cait1d">Quando corro em superfícies planas</string>
+    <string name="cait1e">Quando ando em superfícies irregulares</string>
+    <string name="cait1f">Quando ando em superfícies planas</string>
+
+
+    <string name="cait2a">Nunca</string>
+    <string name="cait2b">Às vezes quando pratico esportes (nem sempre)</string>
+    <string name="cait2c">Frequentemente quando pratico esportes</string>
+    <string name="cait2d">Às vezes durante atividades diárias</string>
+    <string name="cait2e">Frequentemente durante atividades diárias</string>
+
+    <string name="cait3a">Nunca</string>
+    <string name="cait3b">Às vezes quando corro</string>
+    <string name="cait3c">Frequentemente quando corro</string>
+    <string name="cait3d">Quando ando</string>
+
+
+    <string name="cait4a">Nunca</string>
+    <string name="cait4b">Se for rapidamente</string>
+    <string name="cait4c">Ocasionamente</string>
+    <string name="cait4d">Sempre</string>
+
+    <string name="cait5a">Nunca</string>
+    <string name="cait5b">Na ponta do pé</string>
+    <string name="cait5c">Com o pé inteiro no chão</string>
+
+
+
+    <string name="cait6a">Nunca</string>
+    <string name="cait6b">Pulo de um lado para o outro numa só perna</string>
+    <string name="cait6c">Quando pulo no mesmo lugar numa só perma</string>
+    <string name="cait6d">Quando pulo com as duas pernas </string>
+
+    <string name="cait7a">Nunca</string>
+    <string name="cait7b">Corro em superfícies irregulares</string>
+    <string name="cait7c">Corro lentamente em superfícies irregulares</string>
+    <string name="cait7d">Ando em superfícies irregulares</string>
+    <string name="cait7e">Ando em uma superfície plana</string>
+
+    <string name="cait8a">Imediatamente</string>
+    <string name="cait8b">Frequentimente</string>
+    <string name="cait8c">Às vezes</string>
+    <string name="cait8d">Nunca</string>
+    <string name="cait8e">Nunca torci o tornozelo</string>
+
+
+     <string name="cait9a">Quase imediatamente</string>
+    <string name="cait9b">Em menos de um dia</string>
+    <string name="cait9c">Em 1 a 2 dias</string>
+    <string name="cait9d">Em mais de 2 dias</string>
+    <string name="cait9e">Nunca torci o tornozelo</string>
+
+
+
+
+    <string name="fonteCait">De Noronha, Marcos, et al. "Cross-cultural adaptation of the Brazilian-Portuguese version of the Cumberland Ankle Instability Tool (CAIT)." Disability and rehabilitation 30.26 (2008): 1959-1965.</string>
+
+</resources>

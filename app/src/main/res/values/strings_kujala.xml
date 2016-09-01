@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="titulo_kujala">KUJALA</string>
+
+    <string name="p1_kuj">1. Ao andar, você manca?</string>
+    <string name="p1_rb1_kuj">Não</string>
+    <string name="p1_rb2_kuj">As vezes</string>
+    <string name="p1_rb3_kuj">Sempre</string>
+
+    <string name="p2_kuj">2. Você sustenta o peso do corpo?</string>
+    <string name="p2_rb1_kuj">Sim, totalmente sem dor</string>
+    <string name="p2_rb2_kuj">Sim, mas com dor</string>
+    <string name="p2_rb3_kuj">Não é impossível</string>
+
+    <string name="p3_kuj">3. Você caminha:</string>
+    <string name="p3_rb1_kuj">Sem limite de distância</string>
+    <string name="p3_rb2_kuj">Mais de 2 km</string>
+    <string name="p3_rb3_kuj">Entre 1 a 2 km</string>
+    <string name="p3_rb4_kuj">Sou incapaz de caminhar</string>
+
+
+    <string name="p4_kuj">4. Para subir e descer escadas você:</string>
+    <string name="p4_rb1_kuj">Não tem dificuldade</string>
+    <string name="p4_rb2_kuj">Tem leve dor apenas ao descer</string>
+    <string name="p4_rb3_kuj">Tem dor ao descer e ao subir</string>
+    <string name="p4_rb4_kuj">Não consegue subir nem descer escadas</string>
+
+    <string name="p5_kuj">5. Para agachar você:</string>
+    <string name="p5_rb1_kuj">Não tem dificuldade</string>
+    <string name="p5_rb2_kuj">Sente dor após vários agachamentos</string>
+    <string name="p5_rb3_kuj">Sente dor em um/cada agachamento</string>
+    <string name="p5_rb4_kuj">Só é possível descarregando parcialmente o peso do corpo na perna afetada</string>
+    <string name="p5_rb5_kuj">Não consegue</string>
+
+
+    <string name="p6_kuj">6. Para correr você:</string>
+    <string name="p6_rb1_kuj">Não tem dificuldade</string>
+    <string name="p6_rb2_kuj">Sente dor após 2 km</string>
+    <string name="p6_rb3_kuj">Sente dor leve desde o início</string>
+    <string name="p6_rb4_kuj">Sente dor forte</string>
+    <string name="p6_rb5_kuj">Não consegue</string>
+
+    <string name="p7_kuj">7. Para pular você:</string>
+    <string name="p7_rb1_kuj">Não tem dificuldade</string>
+    <string name="p7_rb2_kuj">Tem leve dificuldade</string>
+    <string name="p7_rb3_kuj">Tem dor constante</string>
+    <string name="p7_rb4_kuj">Não consegue</string>
+
+    <string name="p8_kuj">8. Em relação à sentar-se prolongadamente com os joelhos flexionados:</string>
+    <string name="p8_rb1_kuj">Não sente dor</string>
+    <string name="p8_rb2_kuj">Sente dor ao sentar somente após realização de exercício</string>
+    <string name="p8_rb3_kuj">Sente dor constante</string>
+    <string name="p8_rb4_kuj">Sente dor que faz com que tenha que estender os joelhos por um tempo</string>
+    <string name="p8_rb5_kuj">Não consegue</string>
+
+    <string name="p9_kuj">9. Você sente dor no joelho afetado?</string>
+    <string name="p9_rb1_kuj">Não</string>
+    <string name="p9_rb2_kuj">Leve e às vezes</string>
+    <string name="p9_rb3_kuj">Tenho dor que prejudica o sono</string>
+    <string name="p9_rb4_kuj">Forte e às vezes</string>
+    <string name="p9_rb5_kuj">Forte e Constante</string>
+
+    <string name="p10_kuj">10. Quanto ao inchaço:</string>
+    <string name="p10_rb1_kuj">Não apresento</string>
+    <string name="p10_rb2_kuj">Tenho apenas após muito esforço</string>
+    <string name="p10_rb3_kuj">Tenho após atividades diárias</string>
+    <string name="p10_rb4_kuj">Tenho toda noite</string>
+    <string name="p10_rb5_kuj">Tenho constantemente</string>
+
+    <string name="p11_kuj">11. Em relação a sua DOR aos deslocamentos patelares anormais (subluxações):</string>
+    <string name="p11_rb1_kuj">Está ausente</string>
+    <string name="p11_rb2_kuj">Às vezes em atividades esportivas</string>
+    <string name="p11_rb3_kuj">Às vezes em atividades diárias</string>
+    <string name="p11_rb4_kuj">Pelo menos um deslocamento comprovado</string>
+    <string name="p11_rb5_kuj">Mais de dois deslocamentos</string>
+
+    <string name="p12_kuj">12. Você perdeu massa muscular (Atrofia) da coxa?</string>
+    <string name="p12_rb1_kuj">Nenhuma</string>
+    <string name="p12_rb2_kuj">Pouca</string>
+    <string name="p12_rb3_kuj">Muita</string>
+
+    <string name="p13_kuj">13. Você tem dificuldade para dobrar o joelho afetado?</string>
+    <string name="p13_rb1_kuj">Nenhuma</string>
+    <string name="p13_rb2_kuj">Pouca</string>
+    <string name="p13_rb3_kuj">Muita</string>
+
+    <string name="kuj_result">Resultado KUJALA</string>
+
+    <string name="fonteKujala">Fonte: Kujala UM, Jaakkola LH, Koskinen SK, Taimela S, Hurme M, Nelimarkka O.
+Scoring of patellofemoral disorders. Arthroscopy. 1993;9:159-63.</string>
+
+</resources>

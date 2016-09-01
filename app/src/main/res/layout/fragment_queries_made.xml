@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.stenio.physioq.fragments.QueriesMadeFragment"
+    android:id="@+id/QueriesMadeFragment"
+   >
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListView01"
+        android:theme="@android:style/Widget.Holo.ExpandableListView"
+        android:elevation="@dimen/item_touch_helper_max_drag_scroll_per_frame"
+        android:layout_marginLeft="@dimen/abc_dialog_list_padding_vertical_material"
+        style="@style/Base.Widget.AppCompat.ListView" />
+
+
+</FrameLayout>

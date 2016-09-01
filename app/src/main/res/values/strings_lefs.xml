@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="titulo_lefs">LEFS</string>
+
+    <string name="p0_lefs">Hoje você tem ou teria alguma dificuldade com:</string>
+    <string name="p1_lefs">Qualquer uma do seu trabalho normal, tarefas domésticas ou nas atividades escolares</string>
+    <string name="p2_lefs">Seu passatempo predileto, atividades recreacionais ou esportivas</string>
+    <string name="p3_lefs">Entrar ou sair do banho</string>
+    <string name="p4_lefs">Caminhar entre os quartos</string>
+    <string name="p5_lefs">Calçar seus sapatos ou meias</string>
+    <string name="p6_lefs">Agachar-se</string>
+    <string name="p7_lefs">Levantar um objeto, como uma sacola de compra do chão</string>
+    <string name="p8_lefs">Realizar atividades domésticas leves</string>
+    <string name="p9_lefs">Realizar atividades domésticas pesadas</string>
+    <string name="p10_lefs">Entrar ou sair do carro</string>
+    <string name="p11_lefs">Andar dois quarteirões</string>
+    <string name="p12_lefs">Andar aproximadamente 1,5 Km</string>
+    <string name="p13_lefs">Subir ou descer 10 degraus (aproximadamente um lance de escadas)</string>
+    <string name="p14_lefs">Ficar em pé durante uma hora</string>
+    <string name="p15_lefs">Ficar sentado durante uma hora</string>
+    <string name="p16_lefs">Correr em terreno plano</string>
+    <string name="p17_lefs">Correr em terreno irregular</string>
+    <string name="p18_lefs">Mudar de direção enquanto corre rapidamente</string>
+    <string name="p19_lefs">Pular</string>
+    <string name="p20_lefs">Rolar na cama</string>
+
+    <string name="lefs_atividade">Atividades:</string>
+
+    <string name="lef_result">Resultado LEFS</string>
+
+
+   <string name="fonteLefs">Fonte: Stratford PW, Binkley JM, Watson J, Heath-Jones T.
+    Validation of the LEFS on patients with total joint
+    arthroplasty. Physiother Can. 2000;52:97-105.</string>
+
+
+    <string name="rb1_lefs">Extrema dificuldade ou incapacidade de realizar a atividade</string>
+    <string name="rb2_lefs">Bastante dificuldade</string>
+    <string name="rb3_lefs">Moderada dificuldade</string>
+    <string name="rb4_lefs">Pouca dificuldade</string>
+    <string name="rb5_lefs">Nenhuma dificuldade</string>
+
+</resources>

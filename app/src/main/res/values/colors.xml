@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grey">#ddd</color>
+
+
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorPrimaryLight">#00c9af</color>
+    <color name="colorPrimarytext">#212121</color>
+    <color name="colorSecondText">#999</color>
+    <color name="colorLink">#1ea4f7</color>
+    <color name="colorDivider">#ccc</color>
+
+    <color name="colorAccent">#795548</color>
+
+    <color name="colorFAB">#FF9800</color>
+    <color name="colorFABPressed">#F57C00</color>
+
+
+    <color name="HeaderColor">#ffe0ebf9</color>
+    <color name="editColor">#ff254572</color>
+    <color name="lableColor">#ff656565</color>
+    <color name="ventaTextColor">#ff404040</color>
+    <color name="white">#ffffffff</color>
+    <color name="whitenew">#fcfcfc</color>
+    <color name="black">#ff000000</color>
+    <color name="List_gary">#ffcccccc</color>
+    <color name="oswesty_grey">#ff404040</color>
+    <color name="transparent">#ffffffff</color>
+    <color name="new_lite_gray">#ff9b9a9a</color>
+</resources>

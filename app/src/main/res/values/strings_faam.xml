@@ -1,0 +1,77 @@
+<resources>
+
+    //TORNOZELO > FAAM
+
+    <string name="titulo_faam">FAAM</string>
+
+    <string name="intro">Por favor, responda todas as questões, indicando uma única alternativa que melhor descreva sua condição na última semana. Se a atividade a ser respondida está limitada por algum outro motivo que não esteja relacionado com seu problema do pé ou tornozelo, marque Não se Aplica (N/A).</string>
+    <string name="enunciado">Por causa do seu problema no tornozelo ou pé, quanta dificuldade você tem em:</string>
+    <string name="p1">1) Ficar em pé</string>
+    <string name="p2">2) Caminhar no plano, em superfície regular</string>
+    <string name="p3">3) Caminhar no plano, em superfície regular, descalço.</string>
+    <string name="p4">4) Subir morro</string>
+    <string name="p5">5) Descer morro</string>
+    <string name="p6">6) Subir escada</string>
+    <string name="p7">7) Descer escada</string>
+    <string name="p8">8) Caminhar no plano, em superfície irregular</string>
+    <string name="p9">9) Subir e descer meio-fio</string>
+    <string name="p10">10) Agachar</string>
+    <string name="p11">11) Ficar na ponta dos pés</string>
+    <string name="p12">12) Começar a caminhar</string>
+    <string name="p13">13) Caminhar 5 minutos ou menos</string>
+    <string name="p14">14) Caminhar aproximadamente 10 minutos</string>
+    <string name="p15">15) Caminhar 15 minutos ou mais</string>
+    <string name="p16">16) Atividades domésticas</string>
+    <string name="p17">17) Atividades de vida diária</string>
+    <string name="p18">18) Cuidado pessoal</string>
+    <string name="p19">19) Trabalho leve a moderado que exija caminhar ou ficar em pé</string>
+    <string name="p20">20) Trabalho pesado (empurrar/puxar, subir/descer escada, carregar)</string>
+    <string name="p21">21) Atividades recreativas</string>
+    <string name="diaria">De 0 a 100, como você classificaria seu nível atual de função durante atividades de
+                              vida diária usuais, sendo que 100 corresponde ao mesmo nível de função anterior ao
+                              seu problema do pé ou tornozelo e 0 corresponde a incapacidade em desempenhar
+                              qualquer das suas atividades diárias usuais?</string>
+    <string name="esc_sport">FAAM – ESCALA DE ESPORTE</string>
+    <string name="p22">1) Correr</string>
+    <string name="p23">2) Pular</string>
+    <string name="p24">3) Amortecer o salto</string>
+    <string name="p25">4) Arrancar e parar bruscamente</string>
+    <string name="p26">5) Realizar passadas laterais rápidas, com mudança brusca de direção</string>
+    <string name="p27">6) Atividades de baixo impacto</string>
+    <string name="p28">7) Capacidade em desempenhar a atividade com sua técnica normal</string>
+    <string name="p29">8) Capacidade em praticar o seu esporte desejado pelo tempo que você gostaria</string>
+    <string name="esportiva">De 0 a 100, como você classificaria seu nível atual de função durante suas atividades
+                                esportivas, sendo que 100 corresponde ao mesmo nível de função anterior ao seu
+                                problema do pé ou tornozelo e 0 corresponde à incapacidade em desempenhar
+                                qualquer das suas atividades esportivas usuais?</string>
+    <string name="p30">De um modo geral, como você classificaria seu nível funcional atual?</string>
+
+    <string-array name="array_resp">
+        <item> </item>
+        <item>Incapaz de fazer</item>
+        <item>Extrema</item>
+        <item>Moderada</item>
+        <item>Pouca</item>
+        <item>Nenhuma</item>
+        <item>N/A</item>
+    </string-array>
+    <string-array name="array_resp2">
+        <item>Normal</item>
+        <item>Quase normal</item>
+        <item>Anormal</item>
+        <item>Extremamente anormal</item>
+    </string-array>
+
+    <string name="r_diaria">Atividade diária:</string>
+    <string name="r_esportiva">Atividade esportiva:</string>
+    <string name="r_func_diaria">Função ativ. diaria:</string>
+    <string name="r_func_esportiva">Função ativ. esportiva:</string>
+    <string name="r_func">Nivel funcional atual:</string>
+
+    <string name="faam_result">Resultado FAAM</string>
+
+    <string name="fonteFaam">Fonte : CARCIA, C.R; MARTIN, R.L; DROUIN, J.M. Validity of the Foot and
+                        Ankle Ability Measure in athletes with chronic ankle instability. J Athl
+                        Train, Pittsburg, v.43, n.2, p.179-183, 2008.</string>
+
+</resources>

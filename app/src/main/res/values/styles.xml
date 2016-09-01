@@ -1,0 +1,88 @@
+<resources>
+    <style name="PhysioQTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Used for the default Action Bar Background -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Used on Status Bar-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- Navigation Drawer colors -->
+        <item name="material_drawer_primary_text">@color/colorPrimarytext</item>
+        <item name="material_drawer_selected_text">@color/colorPrimary</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="MaterialDrawerBaseTheme.Light.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="editTextLaystyle">
+        <item name="android:background">@drawable/campo</item>
+        <item name="android:layout_width">283.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+
+    <style name="SpinnerStyle">
+        <item name="android:background">@drawable/btn_spinner</item>
+        <item name="android:layout_width">283.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+
+    <style name="editTextLablestyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/lableColor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="MyCustomToolbarStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/black</item>
+        <!-- item name="autoCompleteTextViewStyle">@style/AutoCompleteTextViewHoloLight</item -->
+    </style>
+
+    <style name="ThemeToolbar" parent="Theme.AppCompat.Light">
+
+        <!-- navigation icon color -->
+        <item name="colorControlNormal">@color/black</item>
+
+        <!-- color of the menu overflow icon -->
+        <item name="android:textColorSecondary">@color/black</item>
+
+
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/dots_vertical</item>
+    </style>
+
+
+
+    <style name="loginButtonstyle">
+        <item name="android:background">@drawable/btn_login</item>
+        <item name="android:layout_width">283.0dip</item>
+        <item name="android:layout_height">55.0dip</item>
+    </style>
+
+
+    <style name="categoriesButtonTextstyle">
+        <item name="android:textSize">35.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/editColor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+</resources>

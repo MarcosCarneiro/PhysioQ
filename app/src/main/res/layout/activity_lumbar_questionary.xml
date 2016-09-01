@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="br.com.stenio.physioq.activities.lumbar.LumbarQuestionaryActivity">
+
+    <include
+        layout="@layout/toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingTop="50dp"
+        android:id="@+id/lumbar_recyclerView"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:background="@android:color/transparent"
+        android:maxHeight="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/ibBack"
+        android:layout_gravity="left|top"
+        android:minHeight="?attr/actionBarSize" />
+
+</FrameLayout>
